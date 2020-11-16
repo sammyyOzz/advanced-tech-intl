@@ -1,0 +1,64 @@
+.home__top {
+    height: 800px;
+    width: 100%;
+    background: url('../images/adtechFactory.jpg') no-repeat 50% 50%;
+    background-size: auto;
+    background-size: cover;
+    /* margin: auto; */
+    /* background-attachment: fixed; */
+
+}
+
+.home__topOverlay {
+    height: 800px;
+    width: 100%;
+    /* top: 0;
+    left: 0; */
+    /* background-color: #011627;
+    opacity: 0.5; */
+    background-color: rgba(36, 40, 70, 0.6);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-top: 81px; */
+    /* position: absolute; */
+    /* top: 0; left: 0; right: 0; bottom: 0; */
+    z-index: -1;
+}
+
+.home__cards {
+    display: flex;
+    align-self: flex-end;
+    z-index: 1;
+}
+
+
+.home__aboutUs {
+    left: 0; right: 0; bottom: 0;
+    background: white;
+    /* padding: 3px 8px; */
+    padding-top: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    height: 750px;
+}
+
+.home__aboutUs > h3, h2 {
+    margin-bottom: 20px;
+    color: rgb(5, 104, 150);
+}
+
+.home__aboutUs {
+    line-height: 30px;
+    font-size: small;
+}
+
+.home__aboutUs > p {
+    color: rgb(65, 62, 62);
+}
+
+#pTop {
+    margin-bottom: 40px;
+}

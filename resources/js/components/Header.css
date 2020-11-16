@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #0274be;
+    opacity: 1;
+    background-color: #11121336;
     /* position: sticky; */
     top: 0;
     z-index: 100;
