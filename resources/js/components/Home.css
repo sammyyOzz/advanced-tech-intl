@@ -1,3 +1,7 @@
+.home {
+    width: 100%;
+}
+
 .home__top {
     height: 800px;
     width: 100%;
@@ -9,14 +13,14 @@
 
 }
 
-.home__topOverlay {
+.home__overlay {
     height: 800px;
     width: 100%;
     /* top: 0;
     left: 0; */
     /* background-color: #011627;
     opacity: 0.5; */
-    background-color: rgba(36, 40, 70, 0.6);
+    background-color: rgba(45, 50, 95, 0.6);
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -30,22 +34,22 @@
     display: flex;
     align-self: flex-end;
     z-index: 1;
+    padding: 0px 10px 0px 10px;
 }
-
 
 .home__aboutUs {
     left: 0; right: 0; bottom: 0;
     background: white;
-    /* padding: 3px 8px; */
-    padding-top: 300px;
+    padding: 250px 50px 100px 50px ;
+    /* padding-top: 300px; */
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: space-around;
-    height: 750px;
+    height: 500px;
 }
 
-.home__aboutUs > h3, h2 {
+.home__aboutUs > h3, .home__aboutUs > h2 {
     margin-bottom: 20px;
     color: rgb(5, 104, 150);
 }
@@ -61,4 +65,100 @@
 
 #pTop {
     margin-bottom: 40px;
+}
+
+
+/* our products */
+
+.home__ourProducts {
+    height: auto;
+    width: 100%;
+    background: url('../images/our_products.jpeg') no-repeat 50% 50%;
+    background-size: auto;
+    background-size: cover;
+    z-index: 1;
+}
+
+.home__overlayProducts {
+    height: auto;
+    width: 100%;
+    background-color: rgba(45, 50, 95, 0.6);
+
+}
+
+.home__productsContent {
+    color: white;
+    padding: 150px 100px 150px 100px;
+}
+
+.home__productsLeft {
+    color: white;
+}
+
+.home__productsLeft > hr {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: rgb(151, 148, 148);
+}
+
+.leftHoverBorder {
+    border: 1px solid transparent;
+    margin-bottom: 30px;
+}
+
+.leftHoverBorder:hover {
+    transition: all 200ms linear;
+    /* box-shadow: 2px 5px 8px rgb(212, 209, 209); */
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+}
+
+.leftLinksBox > span {
+    padding-right: 25px;
+    padding-left: 25px;
+    border-right: 1px solid white;
+    line-height: 30px;
+}
+
+.leftLinksBox > span:hover {
+    color: yellow;
+}
+
+#firstSpanLink {
+    padding-left: 0;
+}
+
+#lastSpanLink {
+    border-right: 1px solid transparent;
+}
+
+.home__productsRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+
+/* Our Contributions */
+
+.home__ourContributions {
+    height: 800px;
+    width: 100%;
+    padding: 120px 50px 100px 50px ;
+    text-align: center;
+}
+
+.home__ourContributions > h4 {
+    color: rgb(5, 104, 150);
+    margin-bottom: 25px;
+}
+
+.home__ourContributions > h2 {
+    color: rgb(5, 104, 150);
+}
+
+.home__ourContributions > p {
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
