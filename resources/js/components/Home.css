@@ -6,7 +6,6 @@
     height: 800px;
     width: 100%;
     background: url('../images/adtechFactory.jpg') no-repeat 50% 50%;
-    background-size: auto;
     background-size: cover;
     /* margin: auto; */
     /* background-attachment: fixed; */
@@ -30,41 +29,49 @@
     z-index: -1;
 }
 
+.home__topContent {
+    height: 100%;
+    width: 80%;
+    display: flex;
+}
+
 .home__cards {
     display: flex;
     align-self: flex-end;
     z-index: 1;
-    padding: 0px 10px 0px 10px;
+    /* padding: 0px 10px 0px 10px; */
 }
 
+
+/* About Us */
+
 .home__aboutUs {
-    left: 0; right: 0; bottom: 0;
+    height: auto;
+    width: 100%;
     background: white;
-    padding: 250px 50px 100px 50px ;
-    /* padding-top: 300px; */
+    display: flex;
+    justify-content: center;
+}
+
+.home__aboutUsContent {
+    /* left: 0; right: 0; bottom: 0; */
+    padding: 250px 50px 150px 50px ;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: space-around;
     height: 500px;
-}
-
-.home__aboutUs > h3, .home__aboutUs > h2 {
-    margin-bottom: 20px;
-    color: rgb(5, 104, 150);
-}
-
-.home__aboutUs {
     line-height: 30px;
     font-size: small;
 }
 
-.home__aboutUs > p {
-    color: rgb(65, 62, 62);
+.home__aboutUsContent > h3, .home__aboutUsContent > h2 {
+    margin-bottom: 20px;
+    color: rgb(5, 104, 150);
 }
 
-#pTop {
-    margin-bottom: 40px;
+.home__aboutUsContent > p {
+    color: rgb(65, 62, 62);
 }
 
 
@@ -74,7 +81,6 @@
     height: auto;
     width: 100%;
     background: url('../images/our_products.jpeg') no-repeat 50% 50%;
-    background-size: auto;
     background-size: cover;
     z-index: 1;
 }
@@ -83,12 +89,17 @@
     height: auto;
     width: 100%;
     background-color: rgba(45, 50, 95, 0.6);
-
+    display: flex;
+    justify-content: center;
 }
 
 .home__productsContent {
     color: white;
-    padding: 150px 100px 150px 100px;
+    width: 80%;
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    /* padding: 150px 100px 150px 100px; */
 }
 
 .home__productsLeft {
@@ -145,20 +156,29 @@
 .home__ourContributions {
     height: auto;
     width: 100%;
-    padding: 120px 50px 100px 50px ;
+    /* padding: 120px 50px 100px 50px ; */
+    display: flex;
+    justify-content: center;
+}
+
+.home__ourContributionsContent {
+    height: 100%;
+    width: 80%;
+    padding-bottom: 50px;
+    padding-top: 100px;
     text-align: center;
 }
 
-.home__ourContributions > h4 {
+.home__ourContributionsContent > h4 {
     color: rgb(5, 104, 150);
     margin-bottom: 25px;
 }
 
-.home__ourContributions > h2 {
+.home__ourContributionsContent > h2 {
     color: rgb(5, 104, 150);
 }
 
-.home__ourContributions > p {
+.home__ourContributionsContent > p {
     margin-bottom: 50px;
     margin-top: 50px;
 }
@@ -171,10 +191,9 @@
 /* home__bottom */
 
 .home__bottom {
-    height: 500px;
+    height: auto;
     width: 100%;
     background: url('../images/home_bottom.jpg') no-repeat 50% 50%;
-    background-size: auto;
     background-size: cover;
     z-index: 1;
 }
@@ -183,7 +202,15 @@
     height: 100%;
     width: 100%;
     background-color: rgba(17, 40, 71, 0.623);
+    display: flex;
+    justify-content: center;
+}
 
+.home__bottomContent {
+    height: 100%;
+    width: 80%;
+    padding-top: 100px;
+    padding-bottom: 150px;
 }
 
 .home__bottomGrid > h4 {
@@ -226,6 +253,7 @@
     width: 100%;
 }
 
-.home__bottomOverlay > hr {
+.home__bottomContent > hr {
+    margin-top: 100px;
     border: 1px dotted rgb(184, 175, 175);
 }

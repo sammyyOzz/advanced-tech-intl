@@ -10,52 +10,53 @@ function Home() {
         <div className="home">
             <div className="home__top">
                 <div className="home__overlay">
-                    {/* <div>
-                        <button>Click me</button>
-                    </div> */}
+                    <div className="home__topContent">
 
-                    <div className="home__cards">
-                        <Grid container spacing={3}>
-                            <Grid item >
-                                <HomeTopCard
-                                    caption="AUTOMATE"
-                                    text="Try out our world-class automation products"
-                                />
+                        <div className="home__cards">
+                            <Grid container spacing={3}>
+                                <Grid item xs={12} md={4}>
+                                    <HomeTopCard
+                                        caption="AUTOMATE"
+                                        text="Try out our world-class automation products"
+                                    />
+                                </Grid>
+                                <Grid item xs={12} md={4}>
+                                    <HomeTopCard
+                                        caption="EDUCATE"
+                                        text="We have wide range of education research products"
+                                    />
+                                </Grid>
+                                <Grid item xs={12} md={4}>
+                                    <HomeTopCard
+                                        caption="INNOVATIVE"
+                                        text="we are representing worlds' leading research products"
+                                    />
+                                </Grid>
                             </Grid>
-                            <Grid item >
-                                <HomeTopCard
-                                    caption="EDUCATE"
-                                    text="We have wide range of education research products"
-                                />
-                            </Grid>
-                            <Grid item >
-                                <HomeTopCard
-                                    caption="INNOVATIVE"
-                                    text="we are representing worlds' leading research products"
-                                />
-                            </Grid>
-                        </Grid>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <Grid container>
-                <Grid item md={3} />
-                <Grid item xs={12} md={6}>
-                    <div className="home__aboutUs">
-                        <h3>About Us</h3>
-                        <h2>25 Long Years Of Service Excellence With Quality At It's Best!</h2>
-                        <p id="pTop">We are the authorised exclusive Distributors of World’s leading Companies. We reach out all our Customers with Strong Sales and Marketing Teams. We have been Extremely Successful as we with our trained technical teams providing right solutions and installation and support locally.</p>
-                        <p>Our factory trained team of Engineers provides Installation and Support services including 24X7 timelines on mission critical installations. Our Engineers visit customers to provide these services within UAE, other Middle East and African countries.</p>
-                    </div>
+            <div className="home__aboutUs">
+                <Grid container>
+                    <Grid item md={3} />
+                    <Grid item xs={12} md={6}>
+                        <div className="home__aboutUsContent">
+                            <h3>About Us</h3>
+                            <h2>25 Long Years Of Service Excellence With Quality At It's Best!</h2>
+                            <p style={{ marginBottom: '30px'}}>We are the authorised exclusive Distributors of World’s leading Companies. We reach out all our Customers with Strong Sales and Marketing Teams. We have been Extremely Successful as we with our trained technical teams providing right solutions and installation and support locally.</p>
+                            <p>Our factory trained team of Engineers provides Installation and Support services including 24X7 timelines on mission critical installations. Our Engineers visit customers to provide these services within UAE, other Middle East and African countries.</p>
+                        </div>
+                    </Grid>
+                    <Grid item md={3} />
                 </Grid>
-                <Grid item md={3} />
-            </Grid>
+            </div>
 
             <div className="home__ourProducts">
                 <div className="home__overlayProducts">
                     <div className="home__productsContent">
-                        <Grid container spacing={8}>
+                        <Grid container spacing={10}>
                             <Grid item xs={12} md={7}>
                                 <div className="home__productsLeft">
                                     <h3 style={{ marginBottom: '30px', color: '#b0bec5'}}>Our products</h3>
@@ -132,107 +133,114 @@ function Home() {
                 </div>
             </div>
 
+            {/* Our Contributions */}
             <div className="home__ourContributions">
-                <h4>Our Contributions</h4>
-                <h2>Industries We Serve!</h2>
-                <p>We help Industries to optimise with Integration of data from Shop floor to Top floor Realtime to make the timely decision.</p>
-                <div className="home__imageCards">
-                    <Grid container spacing={2}>
-                        <Grid item xs={12} md={4}>
-                            <HomeImageCard
-                                image="aerospace.jpg"
-                                tag="Defence And Aerospace"
-                            />
+                <div className="home__ourContributionsContent">
+                    <h4>Our Contributions</h4>
+                    <h2>Industries We Serve!</h2>
+                    <p>We help Industries to optimise with Integration of data from Shop floor to Top floor Realtime to make the timely decision.</p>
+                    <div className="home__imageCards">
+                        <Grid container spacing={2}>
+                            <Grid item xs={12} md={4}>
+                                <HomeImageCard
+                                    image="aerospace.jpg"
+                                    tag="Defence And Aerospace"
+                                />
+                            </Grid>
+                            <Grid item xs={12} md={4}>
+                                <HomeImageCard
+                                    image="oil.jpg"
+                                    tag="Oil And Gas Industry"
+                                />
+                            </Grid>
+                            <Grid item xs={12} md={4}>
+                                <HomeImageCard
+                                    image="automotive1.jpg"
+                                    tag="Automotive Industry"
+                                />
+                            </Grid>
+                            <Grid item xs={12} md={4}>
+                                <HomeImageCard
+                                    image="education-research.jpg"
+                                    tag="Education And Research"
+                                />
+                            </Grid>
+                            <Grid item xs={12} md={4}>
+                                <HomeImageCard
+                                    image="iautomation.jpg"
+                                    tag="SCADA & Analytics"
+                                />
+                            </Grid>
+                            <Grid item xs={12} md={4}>
+                                <HomeImageCard
+                                    image="industry-web.jpg"
+                                    tag="IoT and Industry 4.0 Solutions"
+                                />
+                            </Grid>
                         </Grid>
-                        <Grid item xs={12} md={4}>
-                            <HomeImageCard
-                                image="oil.jpg"
-                                tag="Oil And Gas Industry"
-                            />
-                        </Grid>
-                        <Grid item xs={12} md={4}>
-                            <HomeImageCard
-                                image="automotive1.jpg"
-                                tag="Automotive Industry"
-                            />
-                        </Grid>
-                        <Grid item xs={12} md={4}>
-                            <HomeImageCard
-                                image="education-research.jpg"
-                                tag="Education And Research"
-                            />
-                        </Grid>
-                        <Grid item xs={12} md={4}>
-                            <HomeImageCard
-                                image="iautomation.jpg"
-                                tag="SCADA & Analytics"
-                            />
-                        </Grid>
-                        <Grid item xs={12} md={4}>
-                            <HomeImageCard
-                                image="industry-web.jpg"
-                                tag="IoT and Industry 4.0 Solutions"
-                            />
-                        </Grid>
-                    </Grid>
-                </div>
-                <div className="home__carosel">
-                    <h1>Carosel div</h1>
-                    <h1>Carosel div</h1>
-                    <h1>Carosel div</h1>
+                    </div>
+                    <div className="home__carosel">
+                        <h1>Carosel div</h1>
+                        <h1>Carosel div</h1>
+                        <h1>Carosel div</h1>
+                    </div>
                 </div>
             </div>
 
+
+            {/* Bottom */}
             <div className="home__bottom">
                 <div className="home__bottomOverlay">
-                    <Grid container spacing={10}>
-                        <Grid item container spacing={3} xs={12} md={7}>
-                            <Grid item xs={6} md={4}>
-                                <div className="home__bottomGrid">
-                                    <h4>Products</h4>
-                                    <p>Industrial Automation</p>
-                                    <p>SCADA & Analytics</p>
-                                    <p>Education & Research</p>
-                                    <p>Defese & Aerospace</p>
-                                </div>
+                    <div className="home__bottomContent">
+                        <Grid container spacing={10}>
+                            <Grid item container spacing={3} xs={12} md={7}>
+                                <Grid item xs={6} md={4}>
+                                    <div className="home__bottomGrid">
+                                        <h4>Products</h4>
+                                        <p>Industrial Automation</p>
+                                        <p>SCADA & Analytics</p>
+                                        <p>Education & Research</p>
+                                        <p>Defese & Aerospace</p>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6} md={4}>
+                                    <div className="home__bottomGrid">
+                                        <h4>Services</h4>
+                                        <p>Installation Services</p>
+                                        <p>Repair & Calibration</p>
+                                        <p>Turnkey Solution</p>
+                                        <p>Project Maping</p>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6} md={4}>
+                                    <div className="home__bottomGrid">
+                                        <h4>About</h4>
+                                        <p>Contact Us</p>
+                                        <p>About Us</p>
+                                        <p>Projects</p>
+                                        <p>Blogs & Videos</p>
+                                        <p>News Letters</p>
+                                        <p>Careers</p>
+                                    </div>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={6} md={4}>
-                                <div className="home__bottomGrid">
-                                    <h4>Services</h4>
-                                    <p>Installation Services</p>
-                                    <p>Repair & Calibration</p>
-                                    <p>Turnkey Solution</p>
-                                    <p>Project Maping</p>
-                                </div>
-                            </Grid>
-                            <Grid item xs={6} md={4}>
-                                <div className="home__bottomGrid">
-                                    <h4>About</h4>
-                                    <p>Contact Us</p>
-                                    <p>About Us</p>
-                                    <p>Projects</p>
-                                    <p>Blogs & Videos</p>
-                                    <p>News Letters</p>
-                                    <p>Careers</p>
+
+                            <Grid item xs={12} md={5}>
+                                <div className="home__bottomForm">
+                                    <form>
+                                        <input type="text" placeholder="Name" />
+                                        <input type="email" placeholder="Email" />
+                                        <input type="text" placeholder="Phone Number" />
+                                        <textarea placeholder="Message" ></textarea>
+                                        <Button variant="contained" style={{ backgroundColor: '#fdd835', color: 'white'}}><h4>Submit</h4></Button>
+                                    </form>
                                 </div>
                             </Grid>
                         </Grid>
 
-                        <Grid item xs={12} md={5}>
-                            <div className="home__bottomForm">
-                                <form>
-                                    <input type="text" placeholder="Name" />
-                                    <input type="email" placeholder="Email" />
-                                    <input type="text" placeholder="Phone Number" />
-                                    <textarea placeholder="Message" ></textarea>
-                                    <button>Submit</button>
-                                </form>
-                            </div>
-                        </Grid>
-                    </Grid>
+                        <hr />
 
-                    <hr />
-
+                    </div>
                 </div>
             </div>
         </div>
