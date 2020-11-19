@@ -1,0 +1,24 @@
+.imageCard {
+    margin-bottom: 40px;
+}
+
+.imageCard__box > img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.imageCard__tag {
+    text-align: left;
+    margin-top: 30px;
+    color: rgb(5, 104, 150);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.imageCard__tag:hover {
+    transition: all 200ms linear;
+    /* box-shadow: 2px 5px 8px rgb(212, 209, 209); */
+    -webkit-box-shadow: 0 0 10px rgb(70, 65, 65);
+    box-shadow: 0 0 10px rgb(70, 65, 65);
+}

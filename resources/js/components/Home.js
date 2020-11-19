@@ -3,6 +3,7 @@ import './Home.css'
 import HomeTopCard from './HomeTopCard'
 import Grid from '@material-ui/core/Grid';
 import { Button } from '@material-ui/core';
+import HomeImageCard from './HomeImageCard';
 
 function Home() {
     return (
@@ -15,19 +16,19 @@ function Home() {
 
                     <div className="home__cards">
                         <Grid container spacing={3}>
-                            <Grid item>
+                            <Grid item >
                                 <HomeTopCard
                                     caption="AUTOMATE"
                                     text="Try out our world-class automation products"
                                 />
                             </Grid>
-                            <Grid item>
+                            <Grid item >
                                 <HomeTopCard
                                     caption="EDUCATE"
                                     text="We have wide range of education research products"
                                 />
                             </Grid>
-                            <Grid item>
+                            <Grid item >
                                 <HomeTopCard
                                     caption="INNOVATIVE"
                                     text="we are representing worlds' leading research products"
@@ -135,6 +136,104 @@ function Home() {
                 <h4>Our Contributions</h4>
                 <h2>Industries We Serve!</h2>
                 <p>We help Industries to optimise with Integration of data from Shop floor to Top floor Realtime to make the timely decision.</p>
+                <div className="home__imageCards">
+                    <Grid container spacing={2}>
+                        <Grid item xs={12} md={4}>
+                            <HomeImageCard
+                                image="aerospace.jpg"
+                                tag="Defence And Aerospace"
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <HomeImageCard
+                                image="oil.jpg"
+                                tag="Oil And Gas Industry"
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <HomeImageCard
+                                image="automotive1.jpg"
+                                tag="Automotive Industry"
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <HomeImageCard
+                                image="education-research.jpg"
+                                tag="Education And Research"
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <HomeImageCard
+                                image="iautomation.jpg"
+                                tag="SCADA & Analytics"
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <HomeImageCard
+                                image="industry-web.jpg"
+                                tag="IoT and Industry 4.0 Solutions"
+                            />
+                        </Grid>
+                    </Grid>
+                </div>
+                <div className="home__carosel">
+                    <h1>Carosel div</h1>
+                    <h1>Carosel div</h1>
+                    <h1>Carosel div</h1>
+                </div>
+            </div>
+
+            <div className="home__bottom">
+                <div className="home__bottomOverlay">
+                    <Grid container spacing={10}>
+                        <Grid item container spacing={3} xs={12} md={7}>
+                            <Grid item xs={6} md={4}>
+                                <div className="home__bottomGrid">
+                                    <h4>Products</h4>
+                                    <p>Industrial Automation</p>
+                                    <p>SCADA & Analytics</p>
+                                    <p>Education & Research</p>
+                                    <p>Defese & Aerospace</p>
+                                </div>
+                            </Grid>
+                            <Grid item xs={6} md={4}>
+                                <div className="home__bottomGrid">
+                                    <h4>Services</h4>
+                                    <p>Installation Services</p>
+                                    <p>Repair & Calibration</p>
+                                    <p>Turnkey Solution</p>
+                                    <p>Project Maping</p>
+                                </div>
+                            </Grid>
+                            <Grid item xs={6} md={4}>
+                                <div className="home__bottomGrid">
+                                    <h4>About</h4>
+                                    <p>Contact Us</p>
+                                    <p>About Us</p>
+                                    <p>Projects</p>
+                                    <p>Blogs & Videos</p>
+                                    <p>News Letters</p>
+                                    <p>Careers</p>
+                                </div>
+                            </Grid>
+                        </Grid>
+
+                        <Grid item xs={12} md={5}>
+                            <div className="home__bottomForm">
+                                <form>
+                                    <input type="text" placeholder="Name" />
+                                    <input type="email" placeholder="Email" />
+                                    <input type="text" placeholder="Phone Number" />
+                                    <textarea placeholder="Message" ></textarea>
+                                    <button>Submit</button>
+                                </form>
+                            </div>
+                        </Grid>
+                    </Grid>
+
+                    <hr />
+
+                </div>
             </div>
         </div>
 

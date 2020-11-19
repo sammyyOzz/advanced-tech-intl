@@ -143,7 +143,7 @@
 /* Our Contributions */
 
 .home__ourContributions {
-    height: 800px;
+    height: auto;
     width: 100%;
     padding: 120px 50px 100px 50px ;
     text-align: center;
@@ -161,4 +161,71 @@
 .home__ourContributions > p {
     margin-bottom: 50px;
     margin-top: 50px;
+}
+
+.home__imageCards {
+    display: flex;
+}
+
+
+/* home__bottom */
+
+.home__bottom {
+    height: 500px;
+    width: 100%;
+    background: url('../images/home_bottom.jpg') no-repeat 50% 50%;
+    background-size: auto;
+    background-size: cover;
+    z-index: 1;
+}
+
+.home__bottomOverlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(17, 40, 71, 0.623);
+
+}
+
+.home__bottomGrid > h4 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.home__bottomGrid > p {
+    color: rgb(184, 175, 175);
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+.home__bottomGrid > p:hover {
+    color: yellow;
+}
+
+.home__bottomForm > form > input {
+    height: 25px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(151, 149, 149);
+    color: rgb(7, 156, 224);
+    padding-left: 5px;
+    width: 100%;
+}
+
+.home__bottomForm > form > input:focus {
+    background-color: white;
+}
+
+.home__bottomForm > form > textarea {
+    height: 70px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(151, 149, 149);
+    color: rgb(7, 156, 224);
+    padding-left: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.home__bottomOverlay > hr {
+    border: 1px dotted rgb(184, 175, 175);
 }
