@@ -13,7 +13,7 @@ function Home() {
                     <div className="home__topContent">
 
                         <div className="home__cards">
-                            <Grid container spacing={3}>
+                            <Grid container spacing={5}>
                                 <Grid item xs={12} md={4}>
                                     <HomeTopCard
                                         caption="AUTOMATE"
@@ -22,12 +22,14 @@ function Home() {
                                 </Grid>
                                 <Grid item xs={12} md={4}>
                                     <HomeTopCard
+                                        mobileHide
                                         caption="EDUCATE"
                                         text="We have wide range of education research products"
                                     />
                                 </Grid>
                                 <Grid item xs={12} md={4}>
                                     <HomeTopCard
+                                        mobileHide
                                         caption="INNOVATIVE"
                                         text="we are representing worlds' leading research products"
                                     />
@@ -43,9 +45,19 @@ function Home() {
                     <Grid item md={3} />
                     <Grid item xs={12} md={6}>
                         <div className="home__aboutUsContent">
+                            <div className="homeTopCardMobile">
+                                <HomeTopCard
+                                    caption="EDUCATE"
+                                    text="We have wide range of education research products"
+                                />
+                                <HomeTopCard
+                                    caption="INNOVATIVE"
+                                    text="we are representing worlds' leading research products"
+                                />
+                            </div>
                             <h3>About Us</h3>
                             <h2>25 Long Years Of Service Excellence With Quality At It's Best!</h2>
-                            <p style={{ marginBottom: '30px'}}>We are the authorised exclusive Distributors of World’s leading Companies. We reach out all our Customers with Strong Sales and Marketing Teams. We have been Extremely Successful as we with our trained technical teams providing right solutions and installation and support locally.</p>
+                            <p style={{ marginBottom: '30px' }}>We are the authorised exclusive Distributors of World’s leading Companies. We reach out all our Customers with Strong Sales and Marketing Teams. We have been Extremely Successful as we with our trained technical teams providing right solutions and installation and support locally.</p>
                             <p>Our factory trained team of Engineers provides Installation and Support services including 24X7 timelines on mission critical installations. Our Engineers visit customers to provide these services within UAE, other Middle East and African countries.</p>
                         </div>
                     </Grid>

@@ -39,6 +39,7 @@
     display: flex;
     align-self: flex-end;
     z-index: 1;
+    width: 100%;
     /* padding: 0px 10px 0px 10px; */
 }
 
@@ -60,7 +61,7 @@
     display: flex;
     flex-direction: column;
     align-items: space-around;
-    height: 500px;
+    height: auto;
     line-height: 30px;
     font-size: small;
 }
@@ -240,6 +241,12 @@
 
 .home__bottomForm > form > input:focus {
     background-color: white;
+    transition: all 400ms linear;
+}
+
+.home__bottomForm > form > textarea:focus {
+    background-color: white;
+    transition: all 400ms linear;
 }
 
 .home__bottomForm > form > textarea {
@@ -256,4 +263,27 @@
 .home__bottomContent > hr {
     margin-top: 100px;
     border: 1px dotted rgb(184, 175, 175);
+}
+
+
+.homeTopCardMobile {
+    display: none;
+    width: 100%;
+}
+
+@media(max-width: 800px) {
+    .homeTopCardMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 130px;
+    }
+
+    .home__cards {
+        margin-bottom: -80px;
+    }
+
+    .home__aboutUsContent {
+        padding-top: 20px;
+    }
 }

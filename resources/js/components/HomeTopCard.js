@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRocket } from '@fortawesome/free-solid-svg-icons'
 
 
-function HomeTopCard({ caption, text }) {
+function HomeTopCard({ caption, text, mobileHide }) {
     return (
-        <div className="card">
+        <div className={ ! mobileHide ? "card" : "card__mobileHide"}>
             <div className="card__icon">
                 <h1><FontAwesomeIcon icon={faRocket} /></h1>
             </div>
