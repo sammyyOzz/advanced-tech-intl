@@ -7,7 +7,7 @@ function HomeImageCard({ image, tag }) {
             <div className="imageCard__box">
                 <img src={require(`../images/${image}`)} alt=""/>
             </div>
-            <h4 className="imageCard__tag">Defense And Aerospace</h4>
+            <h4 className="imageCard__tag">{tag}</h4>
         </div>
     )
 }
