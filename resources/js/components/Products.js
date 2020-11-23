@@ -3,7 +3,9 @@ import './Products.css'
 import Grid from '@material-ui/core/Grid'
 import ProductCard from './ProductCard.js'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import Button from '@material-ui/core/Button';
+import BottomWithForm from './BottomWithForm'
+import { Link } from 'react-router-dom';
+
 
 function Products() {
     return (
@@ -19,9 +21,13 @@ function Products() {
                 <Grid container>
                     <Grid item xs={12} md={4}>
                         <div className="products__leftLinks">
-                            <div className="products__leftLinksHeader">
-                                <span><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" /> INDUSTRIAL AUTOMATION </span>
-                            </div>
+                            <Link
+                                to="/products/industrial-automation"
+                                style={{ textDecoration: 'none'}}>
+                                    <div className="products__leftLinksHeader">
+                                        <span><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" /> INDUSTRIAL AUTOMATION </span>
+                                    </div>
+                            </Link>
                             <div className="products__leftLinksContent">
                                 <p><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" />Universal Testing Solution</p>
                                 <p><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" />Data Acquisition and Control System</p>
@@ -155,60 +161,7 @@ function Products() {
                 </Grid>
             </div>
 
-            <div className="products__bottom">
-                <div className="products__bottomOverlay">
-                    <div className="products__bottomContent">
-                        <Grid container spacing={10}>
-                            <Grid item container spacing={3} xs={12} md={7}>
-                                <Grid item xs={6} md={4}>
-                                    <div className="products__bottomGrid">
-                                        <h4>Products</h4>
-                                        <p>Industrial Automation</p>
-                                        <p>SCADA & Analytics</p>
-                                        <p>Education & Research</p>
-                                        <p>Defese & Aerospace</p>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6} md={4}>
-                                    <div className="products__bottomGrid">
-                                        <h4>Services</h4>
-                                        <p>Installation Services</p>
-                                        <p>Repair & Calibration</p>
-                                        <p>Turnkey Solution</p>
-                                        <p>Project Maping</p>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6} md={4}>
-                                    <div className="products__bottomGrid">
-                                        <h4>About</h4>
-                                        <p>Contact Us</p>
-                                        <p>About Us</p>
-                                        <p>Projects</p>
-                                        <p>Blogs & Videos</p>
-                                        <p>News Letters</p>
-                                        <p>Careers</p>
-                                    </div>
-                                </Grid>
-                            </Grid>
-
-                            <Grid item xs={12} md={5}>
-                                <div className="products__bottomForm">
-                                    <form>
-                                        <input type="text" placeholder="Name" />
-                                        <input type="email" placeholder="Email" />
-                                        <input type="text" placeholder="Phone Number" />
-                                        <textarea placeholder="Message" ></textarea>
-                                        <Button variant="contained" style={{ backgroundColor: '#fdd835', color: 'white'}}><h4>Submit</h4></Button>
-                                    </form>
-                                </div>
-                            </Grid>
-                        </Grid>
-
-                        <hr />
-
-                    </div>
-                </div>
-            </div>
+            <BottomWithForm />
 
         </div>
     )

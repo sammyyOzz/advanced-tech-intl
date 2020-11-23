@@ -25,6 +25,13 @@
     color: white;
     margin-left: 10px;
     margin-right: 10px;
+    transition: all 200ms linear;
+}
+
+.header__link:hover {
+    color: rgb(10, 233, 10);
+    transform: scale(1.2);
+    transition: all 200ms linear;
 }
 
 .header > button {

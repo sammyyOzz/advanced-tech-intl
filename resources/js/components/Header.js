@@ -11,28 +11,36 @@ function Header() {
             </div>
 
             <div className="header__nav">
-                <Link to="/">
+                <Link to="/" style={{ textDecoration: 'none'}}>
                     <div className="header__link">
                         Home
                     </div>
                 </Link>
-                <div className="header__link">
-                    About Us
-                </div>
-                <Link to="/products">
+                <Link to="#" style={{ textDecoration: 'none'}}>
+                    <div className="header__link">
+                        About Us
+                    </div>
+                </Link>
+                <Link to="/products" style={{ textDecoration: 'none'}}>
                     <div className="header__link">
                         Products
                     </div>
                 </Link>
-                <div className="header__link">
-                    Services
-                </div>
-                <div className="header__link">
-                    Partners
-                </div>
-                <div className="header__link">
-                    Contact Us
-                </div>
+                <Link to="#" style={{ textDecoration: 'none'}}>
+                    <div className="header__link">
+                        Services
+                    </div>
+                </Link>
+                <Link to="#" style={{ textDecoration: 'none'}}>
+                    <div className="header__link">
+                        Partners
+                    </div>
+                </Link>
+                <Link to="/contact" style={{ textDecoration: 'none'}}>
+                    <div className="header__link">
+                        Contact Us
+                    </div>
+                </Link>
             </div>
 
             <button>Request for quote</button>

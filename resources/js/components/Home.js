@@ -4,6 +4,7 @@ import HomeTopCard from './HomeTopCard'
 import Grid from '@material-ui/core/Grid';
 import { Button } from '@material-ui/core';
 import HomeImageCard from './HomeImageCard';
+import BottomWithForm from './BottomWithForm';
 
 function Home() {
     return (
@@ -201,60 +202,8 @@ function Home() {
 
 
             {/* Bottom */}
-            <div className="home__bottom">
-                <div className="home__bottomOverlay">
-                    <div className="home__bottomContent">
-                        <Grid container spacing={10}>
-                            <Grid item container spacing={3} xs={12} md={7}>
-                                <Grid item xs={6} md={4}>
-                                    <div className="home__bottomGrid">
-                                        <h4>Products</h4>
-                                        <p>Industrial Automation</p>
-                                        <p>SCADA & Analytics</p>
-                                        <p>Education & Research</p>
-                                        <p>Defese & Aerospace</p>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6} md={4}>
-                                    <div className="home__bottomGrid">
-                                        <h4>Services</h4>
-                                        <p>Installation Services</p>
-                                        <p>Repair & Calibration</p>
-                                        <p>Turnkey Solution</p>
-                                        <p>Project Maping</p>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6} md={4}>
-                                    <div className="home__bottomGrid">
-                                        <h4>About</h4>
-                                        <p>Contact Us</p>
-                                        <p>About Us</p>
-                                        <p>Projects</p>
-                                        <p>Blogs & Videos</p>
-                                        <p>News Letters</p>
-                                        <p>Careers</p>
-                                    </div>
-                                </Grid>
-                            </Grid>
-
-                            <Grid item xs={12} md={5}>
-                                <div className="home__bottomForm">
-                                    <form>
-                                        <input type="text" placeholder="Name" />
-                                        <input type="email" placeholder="Email" />
-                                        <input type="text" placeholder="Phone Number" />
-                                        <textarea placeholder="Message" ></textarea>
-                                        <Button variant="contained" style={{ backgroundColor: '#fdd835', color: 'white'}}><h4>Submit</h4></Button>
-                                    </form>
-                                </div>
-                            </Grid>
-                        </Grid>
-
-                        <hr />
-
-                    </div>
-                </div>
-            </div>
+            <BottomWithForm />
+            
         </div>
 
     )
