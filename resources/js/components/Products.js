@@ -55,9 +55,13 @@ function Products() {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <div className="products__leftLinks">
-                            <div className="products__leftLinksHeader">
-                                <span><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" /> SCADA & ANALYTICS </span>
-                            </div>
+                            <Link
+                                to="/products/scada-analytics"
+                                style={{ textDecoration: 'none'}}>
+                                    <div className="products__leftLinksHeader">
+                                        <span><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" /> SCADA & ANALYTICS </span>
+                                    </div>
+                            </Link>
                             <div className="products__leftLinksContent">
                                 <p><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" />Enterprise Solution</p>
                                 <p><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" />Data Historian</p>

@@ -9,6 +9,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Products from './components/Products';
 import IndustrialAutomation from './components/IndustrialAutomation'
+import ScadaAnalytics from './components/ScadaAnalytics';
 
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
                 <Switch>
                     <Route exact path="/products/industrial-automation">
                         <IndustrialAutomation />
+                    </Route>
+                    <Route exact path="/products/scada-analytics">
+                        <ScadaAnalytics />
                     </Route>
                     <Route exact path="/products">
                         <Products />

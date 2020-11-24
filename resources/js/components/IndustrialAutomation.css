@@ -11,8 +11,11 @@
 
 .industrial__leftLinks {
     background-color: rgb(243, 243, 243);
-    /* padding-top: 150px; */
+    padding-top: 120px;
+    height: 100vh;
     width: 100%;
+    position: sticky;
+    top: 0px;
 }
 
 .industrial__leftLinksHeader > span {
@@ -92,4 +95,14 @@
 .industrial__btn > button:hover {
     color: green;
     border-color: green;
+}
+
+
+@media(max-width: 960px) {
+    .industrial__leftLinks {
+        height: auto;
+        position: initial;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
