@@ -8,6 +8,7 @@ import {
 import Header from './components/Header';
 import Home from './components/Home';
 import Products from './components/Products';
+import IndustrialAutomation from './components/IndustrialAutomation'
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
             <Router>
                 <Header />
                 <Switch>
+                    <Route exact path="/products/industrial-automation">
+                        <IndustrialAutomation />
+                    </Route>
                     <Route exact path="/products">
                         <Products />
                     </Route>

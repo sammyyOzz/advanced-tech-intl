@@ -1,0 +1,95 @@
+.industrial {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.industrial__content {
+    width: 80%;
+}
+
+.industrial__leftLinks {
+    background-color: rgb(243, 243, 243);
+    height: 80vh;
+    width: 100%;
+}
+
+.industrial__leftLinksHeader > span {
+    display: flex;
+    align-items: center;
+    color: rgb(196, 11, 11);
+    font-size: 13px;
+    padding: 15px 0px 10px 10px;
+}
+
+#industrial__arrowIcon {
+    padding-right: 10px;
+}
+
+.industrial__leftLinksContent {
+    padding-left: 40px;
+    font-size: 12px;
+}
+
+.industrial__leftLinksContent > p {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.industrial__productGroup {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgb(230, 224, 224);
+    margin-bottom: 50px;
+}
+.industrial__productGroup > h4 {
+    color: red;
+    margin-bottom: 30px;
+}
+
+.industrial__productGroupTitles {
+    margin-bottom: 20px;
+}
+
+.industrial__productGroupTitles > span {
+    font-size: small;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: gray;
+    border-right: 1px solid gray;
+}
+
+.industrial__image {
+    width: 100;
+}
+
+.industrial__image > img {
+    height: auto;
+    width: 100%;
+}
+
+.industrial__btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.industrial__btn > button {
+    border-radius: 30px;
+    padding: 8px;
+    color: red;
+    border: 1px solid red;
+    margin-top: 25px;
+
+}
+
+.industrial__btn > button:hover {
+    color: green;
+    border-color: green;
+}
