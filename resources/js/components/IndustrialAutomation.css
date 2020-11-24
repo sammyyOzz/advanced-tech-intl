@@ -11,7 +11,7 @@
 
 .industrial__leftLinks {
     background-color: rgb(243, 243, 243);
-    height: 80vh;
+    /* padding-top: 150px; */
     width: 100%;
 }
 
