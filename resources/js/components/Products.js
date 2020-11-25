@@ -121,9 +121,13 @@ function Products() {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <div className="products__leftLinks">
-                            <div className="products__leftLinksHeader">
-                                <span><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" /> DEFENSE & AEROSPACE </span>
-                            </div>
+                            <Link
+                                to="/products/defense-aerospace"
+                                style={{ textDecoration: 'none'}}>
+                                    <div className="products__leftLinksHeader">
+                                        <span><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" /> DEFENSE & AEROSPACE </span>
+                                    </div>
+                                </Link>
                             <div className="products__leftLinksContent">
                                 <p><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" />Test & Measurement</p>
                                 <p><ArrowForwardIosIcon fontSize="small" id="products__arrowIcon" />Data Center Management</p>

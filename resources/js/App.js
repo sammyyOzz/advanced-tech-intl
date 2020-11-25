@@ -11,6 +11,7 @@ import Products from './components/Products';
 import IndustrialAutomation from './components/IndustrialAutomation'
 import ScadaAnalytics from './components/ScadaAnalytics';
 import EducationResearch from './components/EducationResearch';
+import DefenceAerospace from './components/DefenceAerospace';
 
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
             <Router>
                 <Header />
                 <Switch>
+                    <Route exact path="/products/defense-aerospace">
+                        <DefenceAerospace />
+                    </Route>
                     <Route exact path="/products/education-research">
                         <EducationResearch />
                     </Route>
