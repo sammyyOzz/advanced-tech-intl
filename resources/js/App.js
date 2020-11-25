@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Products from './components/Products';
 import IndustrialAutomation from './components/IndustrialAutomation'
 import ScadaAnalytics from './components/ScadaAnalytics';
+import EducationResearch from './components/EducationResearch';
 
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
             <Router>
                 <Header />
                 <Switch>
+                    <Route exact path="/products/education-research">
+                        <EducationResearch />
+                    </Route>
                     <Route exact path="/products/industrial-automation">
                         <IndustrialAutomation />
                     </Route>
