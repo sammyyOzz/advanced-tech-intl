@@ -12,6 +12,7 @@ import IndustrialAutomation from './components/IndustrialAutomation'
 import ScadaAnalytics from './components/ScadaAnalytics';
 import EducationResearch from './components/EducationResearch';
 import DefenceAerospace from './components/DefenceAerospace';
+import UniversalTesting from './components/datasheetPages/UniversalTesting';
 
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
                     </Route>
                     <Route exact path="/products/industrial-automation">
                         <IndustrialAutomation />
+                    </Route>
+                    <Route exact path="/products/industrial-automation/universal-testing-solutions">
+                        <UniversalTesting />
                     </Route>
                     <Route exact path="/products/scada-analytics">
                         <ScadaAnalytics />

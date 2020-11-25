@@ -3,6 +3,7 @@ import './IndustrialAutomation.css'
 import Grid from '@material-ui/core/Grid'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import BottomWithForm from './BottomWithForm'
+import { Link } from 'react-router-dom';
 
 
 function IndustrialAutomation() {
@@ -38,7 +39,11 @@ function IndustrialAutomation() {
                     <Grid item xs={12} md={8}>
                         <div className="industrial__rightSect">
                             <div className="industrial__productGroup">
-                                <h4>Universal Testing Solution</h4>
+                                <Link
+                                to="/products/industrial-automation/universal-testing-solutions"
+                                style={{ textDecoration: 'none'}}>
+                                    <h4>Universal Testing Solution</h4>
+                                </Link>
                                 <div className="industrial__productGroupTitles">
                                     <span>Material Testing</span>
                                     <span>Metallography Testing Products</span>
