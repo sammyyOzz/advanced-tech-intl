@@ -15,6 +15,8 @@ import DefenceAerospace from './components/DefenceAerospace';
 import UniversalTesting from './components/datasheetPages/UniversalTesting';
 import DataAcquisition from './components/datasheetPages/DataAcquisition';
 import IndicatorController from './components/datasheetPages/IndicatorController';
+import NetworkingEnterprise from './components/datasheetPages/NetworkingEnterprise';
+import PrimaryFlow from './components/datasheetPages/PrimaryFlow';
 
 
 function App() {
@@ -40,6 +42,12 @@ function App() {
                     </Route>
                     <Route exact path="/products/industrial-automation/indicator-controller">
                         <IndicatorController />
+                    </Route>
+                    <Route exact path="/products/industrial-automation/primary-flow-calibrator">
+                        <PrimaryFlow />
+                    </Route>
+                    <Route exact path="/products/industrial-automation/networking-enterprise-solution">
+                        <NetworkingEnterprise />
                     </Route>
                     <Route exact path="/products/scada-analytics">
                         <ScadaAnalytics />

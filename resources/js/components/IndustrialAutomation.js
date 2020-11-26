@@ -172,7 +172,13 @@ function IndustrialAutomation() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Networking & Enterprise Solution</h4>
+                                <h4>
+                                    <Link
+                                    to="/products/industrial-automation/networking-enterprise-solution"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Networking & Enterprise Solution
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Ethernet Switches</span>
                                     <span style={{ borderRight: 'none'}}>Communication Converter</span>
@@ -200,12 +206,21 @@ function IndustrialAutomation() {
                                     </Grid>
                                 </Grid>
                                 <div className="industrial__btn">
-                                    <button>Learn More</button>
+                                    <button
+                                    onClick={() => { history.push("/products/industrial-automation/networking-enterprise-solution") }}>
+                                        Learn More
+                                    </button>
                                 </div>
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Primary Flow Calibrator</h4>
+                                <h4>
+                                    <Link
+                                    to="/products/industrial-automation/primary-flow-calibrator"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Primary Flow Calibrator
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span style={{ borderRight: 'none'}}>Flow Calibrator</span>
                                 </div>
@@ -230,7 +245,10 @@ function IndustrialAutomation() {
                                     </Grid>
                                 </Grid>
                                 <div className="industrial__btn">
-                                    <button>Learn More</button>
+                                    <button
+                                    onClick={() => { history.push("/products/industrial-automation/primary-flow-calibrator")}}>
+                                        Learn More
+                                    </button>
                                 </div>
                             </div>
 
