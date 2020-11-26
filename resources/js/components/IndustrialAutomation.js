@@ -3,10 +3,12 @@ import './IndustrialAutomation.css'
 import Grid from '@material-ui/core/Grid'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import BottomWithForm from './BottomWithForm'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 
 function IndustrialAutomation() {
+    const history = useHistory();
+
     return (
         <div className="industrial">
             <div className="industrial__carousel">
@@ -39,11 +41,13 @@ function IndustrialAutomation() {
                     <Grid item xs={12} md={8}>
                         <div className="industrial__rightSect">
                             <div className="industrial__productGroup">
-                                <Link
-                                to="/products/industrial-automation/universal-testing-solutions"
-                                style={{ textDecoration: 'none'}}>
-                                    <h4>Universal Testing Solution</h4>
-                                </Link>
+                                <h4>
+                                    <Link
+                                    to="/products/industrial-automation/universal-testing-solutions"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Universal Testing Solution
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Material Testing</span>
                                     <span>Metallography Testing Products</span>
@@ -73,12 +77,21 @@ function IndustrialAutomation() {
                                     </Grid>
                                 </Grid>
                                 <div className="industrial__btn">
-                                    <button>Learn More</button>
+                                    <button
+                                    onClick={() => {history.push("/products/industrial-automation/universal-testing-solutions")}}>
+                                        Learn More
+                                    </button>
                                 </div>
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Data Acquisition and Control System</h4>
+                                <h4>
+                                    <Link
+                                    to="/products/industrial-automation/data-acquisition-and-control-system"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Data Acquisition and Control System
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Data Acquisition System</span>
                                     <span>PLC & IO System</span>
@@ -108,12 +121,21 @@ function IndustrialAutomation() {
                                     </Grid>
                                 </Grid>
                                 <div className="industrial__btn">
-                                    <button>Learn More</button>
+                                    <button
+                                    onClick={() => {history.push("/products/industrial-automation/data-acquisition-and-control-system")}}>
+                                        Learn More
+                                    </button>
                                 </div>
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Indicator & Controller</h4>
+                                <h4>
+                                    <Link
+                                    to="/products/industrial-automation/indicator-controller"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Indicator & Controller
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Indicator</span>
                                     <span>PID Controller</span>
@@ -142,7 +164,10 @@ function IndustrialAutomation() {
                                     </Grid>
                                 </Grid>
                                 <div className="industrial__btn">
-                                    <button>Learn More</button>
+                                    <button
+                                    onClick={() => {history.push("/products/industrial-automation/indicator-controller")}}>
+                                        Learn More
+                                    </button>
                                 </div>
                             </div>
 
