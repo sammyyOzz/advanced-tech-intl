@@ -17,6 +17,8 @@ import DataAcquisition from './components/datasheetPages/DataAcquisition';
 import IndicatorController from './components/datasheetPages/IndicatorController';
 import NetworkingEnterprise from './components/datasheetPages/NetworkingEnterprise';
 import PrimaryFlow from './components/datasheetPages/PrimaryFlow';
+import SensingMeasuring from './components/datasheetPages/SensingMeasuring';
+import EnvMonitoring from './components/datasheetPages/EnvMonitoring';
 
 
 function App() {
@@ -45,6 +47,12 @@ function App() {
                     </Route>
                     <Route exact path="/products/industrial-automation/primary-flow-calibrator">
                         <PrimaryFlow />
+                    </Route>
+                    <Route exact path="/products/industrial-automation/sensing-and-measuring-instruments">
+                        <SensingMeasuring />
+                    </Route>
+                    <Route exact path="/products/industrial-automation/environmental-monitoring">
+                        <EnvMonitoring />
                     </Route>
                     <Route exact path="/products/industrial-automation/networking-enterprise-solution">
                         <NetworkingEnterprise />

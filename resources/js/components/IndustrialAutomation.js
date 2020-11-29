@@ -34,6 +34,7 @@ function IndustrialAutomation() {
                                 <p><ArrowForwardIosIcon fontSize="small" id="industrial__arrowIcon" />Primary Flow Calibrator</p>
                                 <p><ArrowForwardIosIcon fontSize="small" id="industrial__arrowIcon" />Sensing and Measuring Instruments</p>
                                 <p><ArrowForwardIosIcon fontSize="small" id="industrial__arrowIcon" />Environmental Monitoring</p>
+                                <p><ArrowForwardIosIcon fontSize="small" id="industrial__arrowIcon" />Multiloop Process Controller</p>
                             </div>
                         </div>
                     </Grid>
@@ -253,7 +254,13 @@ function IndustrialAutomation() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Sensing and Measuring Instruments</h4>
+                                <h4>
+                                    <Link
+                                    to="/products/industrial-automation/sensing-and-measuring-instruments"
+                                    style={{ textDecoration: 'none', color: 'red' }}>
+                                        Sensing and Measuring Instruments
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Industrial Flow Meter</span>
                                     <span style={{ borderRight: 'none'}}>Humidity & Temperature Transmitter</span>
@@ -281,12 +288,20 @@ function IndustrialAutomation() {
                                     </Grid>
                                 </Grid>
                                 <div className="industrial__btn">
-                                    <button>Learn More</button>
+                                    <button
+                                    onClick={ () => { history.push("/products/industrial-automation/sensing-and-measuring-instruments") }}>
+                                        Learn More
+                                    </button>
                                 </div>
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Environmental Monitoring</h4>
+                                <h4>
+                                    <Link to="/products/industrial-automation/environmental-monitoring"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Environmental Monitoring
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span style={{ borderRight: 'none'}}>Radon Monitor & Accessories</span>
                                 </div>
@@ -313,7 +328,10 @@ function IndustrialAutomation() {
                                     </Grid>
                                 </Grid>
                                 <div className="industrial__btn">
-                                    <button>Learn More</button>
+                                    <button
+                                    onClick={() => { history.push("/products/industrial-automation/environmental-monitoring") }}>
+                                        Learn More
+                                    </button>
                                 </div>
                             </div>
 
