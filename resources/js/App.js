@@ -19,6 +19,7 @@ import NetworkingEnterprise from './components/datasheetPages/NetworkingEnterpri
 import PrimaryFlow from './components/datasheetPages/PrimaryFlow';
 import SensingMeasuring from './components/datasheetPages/SensingMeasuring';
 import EnvMonitoring from './components/datasheetPages/EnvMonitoring';
+import AeronauticalEngr from './components/datasheetPages/AeronauticalEngr';
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
                     </Route>
                     <Route exact path="/products/education-research">
                         <EducationResearch />
+                    </Route>
+                    <Route exact path="/products/education-research/aeronautical-engineering">
+                        <AeronauticalEngr />
                     </Route>
                     <Route exact path="/products/industrial-automation">
                         <IndustrialAutomation />

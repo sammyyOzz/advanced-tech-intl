@@ -20,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 Route::view('/{path?}', 'app');
 Route::view('/products/{path?}', 'app');
 Route::view('/products/industrial-automation/{path?}', 'app');
+Route::view('/products/education-research/{path?}', 'app');
