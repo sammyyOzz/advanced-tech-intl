@@ -68,7 +68,7 @@
     padding-bottom: 50px;
 }
 
-.dataCard__btn > button {
+.cardBtn {
     border-radius: 6px;
     padding: 10px 19px;
     color: white;

@@ -21,6 +21,7 @@ import SensingMeasuring from './components/datasheetPages/SensingMeasuring';
 import EnvMonitoring from './components/datasheetPages/EnvMonitoring';
 import AeronauticalEngr from './components/datasheetPages/AeronauticalEngr';
 import CivilEngr from './components/datasheetPages/CivilEngr';
+import MechanicalEngr from './components/datasheetPages/MechanicalEngr';
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
                     </Route>
                     <Route exact path="/products/education-research/aeronautical-engineering">
                         <AeronauticalEngr />
+                    </Route>
+                    <Route exact path="/products/education-research/mechanical-engineering">
+                        <MechanicalEngr />
                     </Route>
                     <Route exact path="/products/education-research/civil-engineering">
                         <CivilEngr />

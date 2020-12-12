@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './DataCard.css'
 
-function DataCard({ image, title, text, textList, longText, li }) {
+function DataCard({ image, title, text, textList, longText, li, file }) {
     return (
         <div className="dataCard">
             <div className="dataCard__top">
                 <div className="dataCard__image">
-                    <img src={require(`../../images/${image}`)} alt=""/>
+                    <img src={require(`../../images/${image}`)} alt="" />
                 </div>
                 <div className="dataCard__description">
                     <h3>{title}</h3>
@@ -26,7 +27,12 @@ function DataCard({ image, title, text, textList, longText, li }) {
             }
 
             <div className="dataCard__btn">
-                <button>Datasheet</button>
+                {
+                    file &&
+                    <Link to={`/pdfs/${file}`} target="_blank" download>
+                        <button className="cardBtn">Datasheet</button>
+                    </Link>
+                }
             </div>
         </div>
     )
