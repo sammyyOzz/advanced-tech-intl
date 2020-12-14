@@ -49,7 +49,7 @@ function MechanicalEngr() {
 
                 </div>
 
-                {/* <div className="datasheet__row">
+                <div className="datasheet__row">
                     <Grid container>
                         <Grid item xs={12} md={4}>
                             <DataCard
@@ -80,22 +80,29 @@ function MechanicalEngr() {
 
                 <div className="datasheet__row">
                     <Grid container>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={4}>
                             <DataCard
-                                image="aeronautical/PRINCIPLES-of-AIRFLOW-FRICTION-LOSSES-in-BENDS-and-PIPE-ELEMENTS.jpg"
-                                title="Principles of Airflow, Friction Losses in Bends and Pipe Elements"
-                                text="The Optional Principles of Airflow, Friction Losses in Bends and Pipe Elements components have been designed for operation with the Airflow System."
+                                image="mechanical/VISUAL-REFRIGERATION-TRAINING-UNIT.jpg"
+                                title="Visual Refrigeration Training Unit"
+                                text="This unit is designed to demonstrate the basic principles of heat transfer, the vapour compression refrigeration cycle and the function and application of different flow controls."
                             />
                         </Grid>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={4}>
                             <DataCard
-                                image="aeronautical/JET-PROPULSION-TEST-STAND.jpg"
-                                title="Jet Propulsion Test Stand"
-                                text="The ramjet, the simplest concept of aircraft propulsion, consists of an almost cylindrical duct, open at both ends. It relies on its forward speed to ram air into the forward opening. Fuel is burnt inside the duct to accelerate the air stream, which together with the products of combustion, issues from the rear as a high velocity jet. The change in momentum in the engine provides the propulsive force."
+                                image="mechanical/REVERSE-CYCLE-REFRIGERATION-and-AIR-CONDITIONING-UNIT.jpg"
+                                title="Reverse Cycle Refrigeration And Air Conditioning Unit"
+                                text="This unit allows students to explore a more sophisticated refrigeration system incorporating reverse cycle operation, air cooled and water cooled condensers, forced air and static evaporators and dual temperature operation."
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <DataCard
+                                image="mechanical/WATER-CHILLER-TRAINER.jpg"
+                                title="Water Chiller Trainer"
+                                text="This unit allows students to safely explore the parameters affecting evaporating pressure without danger to the operator or equipment."
                             />
                         </Grid>
                     </Grid>
-                </div> */}
+                </div>
             </div>
         </div>
     )

@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import { Button } from '@material-ui/core';
 import HomeImageCard from './HomeImageCard';
 import BottomWithForm from './BottomWithForm';
+import ReactWhatsapp from 'react-whatsapp';
 
 function Home() {
     return (
@@ -12,6 +13,8 @@ function Home() {
             <div className="home__top">
                 <div className="home__overlay">
                     <div className="home__topContent">
+
+                    <ReactWhatsapp number="1-212-736-5000" message="Hello World!!!" />
 
                         <div className="home__cards">
                             <Grid container spacing={5}>

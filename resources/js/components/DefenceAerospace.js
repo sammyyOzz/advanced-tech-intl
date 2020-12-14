@@ -3,6 +3,7 @@ import './IndustrialAutomation.css'
 import Grid from '@material-ui/core/Grid'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import BottomWithForm from './BottomWithForm'
+import { Link } from 'react-router-dom';
 
 function DefenceAerospace() {
     return (
@@ -37,7 +38,12 @@ function DefenceAerospace() {
                     <Grid item xs={12} md={8}>
                         <div className="industrial__rightSect">
                             <div className="industrial__productGroup">
-                                <h4>Test & Measurement</h4>
+                                <h4>
+                                    <Link to="/products/defense-aerospace/test-measurement"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Test & Measurement
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Bench Top Instruments</span>
                                     <span>Synchro/Resolver Simulator</span>
@@ -72,7 +78,12 @@ function DefenceAerospace() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Data Center Management</h4>
+                                <h4>
+                                    <Link to="/products/defense-aerospace/data-center-management"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Data Center Management
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>DCMS Go</span>
                                     <span>DCMS Pro</span>
@@ -106,7 +117,12 @@ function DefenceAerospace() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>COSA Embedded Systems</h4>
+                                <h4>
+                                    <Link to="/products/defense-aerospace/cosa-embedded-systems"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        COSA Embedded Systems
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Smart I/O Boards</span>
                                     <span>Single Board Computers with I/O</span>
@@ -138,7 +154,12 @@ function DefenceAerospace() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Rugged Displays & Panel PC</h4>
+                                <h4>
+                                    <Link to="/products/defense-aerospace/rugged-displays-panel-pc"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Rugged Displays & Panel PC
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Military Grade Displays</span>
                                     <span>Marine Grade Displays</span>
@@ -171,7 +192,12 @@ function DefenceAerospace() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Motion Simulation Systems</h4>
+                                <h4>
+                                    <Link to="/products/defense-aerospace/motion-simulation-systems"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Motion Simulation Systems
+                                    </Link>
+                                    </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Single Axis Rate Tables</span>
                                     <span>Two Axis Rate Tables</span>
@@ -202,7 +228,12 @@ function DefenceAerospace() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Single Board Computers</h4>
+                                <h4>
+                                    <Link to="/products/defense-aerospace/single-board-computers"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Single Board Computers
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>3U VPX Single Board Computer</span>
                                     <span>3U Open VPX Single Board Computer with IO</span>
@@ -240,7 +271,12 @@ function DefenceAerospace() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Chassis, Components & Power Supplies</h4>
+                                <h4>
+                                    <Link to="/products/defense-aerospace/chassis-components-power-supplies"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Chassis, Components & Power Supplies
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Backplanes</span>
                                     <span>Chassis Platforms</span>
@@ -279,7 +315,7 @@ function DefenceAerospace() {
             </div>
 
             <BottomWithForm />
-            
+
         </div>
     )
 }

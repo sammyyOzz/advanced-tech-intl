@@ -3,6 +3,7 @@ import './IndustrialAutomation.css'
 import Grid from '@material-ui/core/Grid'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import BottomWithForm from './BottomWithForm'
+import { Link } from 'react-router-dom';
 
 function EducationResearch() {
     return (
@@ -36,7 +37,12 @@ function EducationResearch() {
                     <Grid item xs={12} md={8}>
                         <div className="industrial__rightSect">
                             <div className="industrial__productGroup">
-                                <h4>Aeronautical Engineering</h4>
+                                <h4>
+                                    <Link to="/products/education-research/aeronautical-engineering"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Aeronautical Engineering
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span style={{ borderRight: 'none'}}>Propulsion Systems</span>
                                 </div>
@@ -65,7 +71,12 @@ function EducationResearch() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Civil Engineering</h4>
+                                <h4>
+                                    <Link to="/products/education-research/civil-engineering"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Civil Engineering
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Force Apparatus</span>
                                     <span>Friction Apparatus</span>
@@ -98,7 +109,12 @@ function EducationResearch() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Mechanical Engineering</h4>
+                                <h4>
+                                    <Link to="/products/education-research/mechanical-engineering"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Mechanical Engineering
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Refrigeration & Air Conditioning</span>
                                     <span>Internal Combustion Engines</span>
@@ -131,7 +147,12 @@ function EducationResearch() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Steam & Renewable Energy</h4>
+                                <h4>
+                                    <Link to="/products/education-research/steam-renewable-energy"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Steam & Renewable Energy
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Renewable Energy</span>
                                     <span style={{ borderRight: 'none'}}>Steam</span>
@@ -161,7 +182,12 @@ function EducationResearch() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Material Testing & Research</h4>
+                                <h4>
+                                    <Link to="/products/education-research/material-testing-research"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Material Testing & Research
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>SSRT Autoclaves & Tools</span>
                                     <span style={{ borderRight: 'none'}}>Universal Testing Systems</span>
@@ -191,7 +217,12 @@ function EducationResearch() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Corrosion Online High Temp-Pressure SSRT</h4>
+                                <h4>
+                                    <Link to="/products/education-research/corrosion-online"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                    Corrosion Online High Temp-Pressure SSRT
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>SSRT Autoclaves & Tools</span>
                                     <span style={{ borderRight: 'none'}}>Online Corrosion Monitors</span>

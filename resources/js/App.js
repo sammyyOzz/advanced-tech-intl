@@ -22,6 +22,16 @@ import EnvMonitoring from './components/datasheetPages/EnvMonitoring';
 import AeronauticalEngr from './components/datasheetPages/AeronauticalEngr';
 import CivilEngr from './components/datasheetPages/CivilEngr';
 import MechanicalEngr from './components/datasheetPages/MechanicalEngr';
+import SteamRenewEnergy from './components/datasheetPages/SteamRenewEnergy';
+import MaterialTesting from './components/datasheetPages/MaterialTesting';
+import CorrosionOnline from './components/datasheetPages/CorrosionOnline';
+import TestMeasurement from './components/datasheetPages/TestMeasurement';
+import DataCenter from './components/datasheetPages/DataCenter';
+import CosaEmbedded from './components/datasheetPages/CosaEmbedded';
+import RuggedDisplays from './components/datasheetPages/RuggedDisplays';
+import MotionSimulation from './components/datasheetPages/MotionSimulation';
+import SingleBoard from './components/datasheetPages/SingleBoard';
+import ChassisComp from './components/datasheetPages/ChassisComp';
 
 
 function App() {
@@ -32,6 +42,27 @@ function App() {
                 <Switch>
                     <Route exact path="/products/defense-aerospace">
                         <DefenceAerospace />
+                    </Route>
+                    <Route exact path="/products/defense-aerospace/test-measurement">
+                        <TestMeasurement />
+                    </Route>
+                    <Route exact path="/products/defense-aerospace/data-center-management">
+                        <DataCenter />
+                    </Route>
+                    <Route exact path="/products/defense-aerospace/cosa-embedded-systems">
+                        <CosaEmbedded />
+                    </Route>
+                    <Route exact path="/products/defense-aerospace/rugged-displays-panel-pc">
+                        <RuggedDisplays />
+                    </Route>
+                    <Route exact path="/products/defense-aerospace/motion-simulation-systems">
+                        <MotionSimulation />
+                    </Route>
+                    <Route exact path="/products/defense-aerospace/single-board-computers">
+                        <SingleBoard />
+                    </Route>
+                    <Route exact path="/products/defense-aerospace/chassis-components-power-supplies">
+                        <ChassisComp />
                     </Route>
                     <Route exact path="/products/education-research">
                         <EducationResearch />
@@ -44,6 +75,15 @@ function App() {
                     </Route>
                     <Route exact path="/products/education-research/civil-engineering">
                         <CivilEngr />
+                    </Route>
+                    <Route exact path="/products/education-research/steam-renewable-energy">
+                        <SteamRenewEnergy />
+                    </Route>
+                    <Route exact path="/products/education-research/material-testing-research">
+                        <MaterialTesting />
+                    </Route>
+                    <Route exact path="/products/education-research/corrosion-online">
+                        <CorrosionOnline />
                     </Route>
                     <Route exact path="/products/industrial-automation">
                         <IndustrialAutomation />
