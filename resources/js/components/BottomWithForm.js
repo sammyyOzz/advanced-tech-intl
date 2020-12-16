@@ -2,6 +2,8 @@ import React from 'react'
 import './BottomWithForm.css'
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid'
+import CopyrightIcon from '@material-ui/icons/Copyright';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 function BottomWithForm() {
     return (
@@ -55,6 +57,18 @@ function BottomWithForm() {
                         </Grid>
 
                         <hr />
+
+                        <div className="bottom__footer">
+                            <div className="bottom__footerLeft">
+                                <span><CopyrightIcon fontSize="small" /></span>
+                                <span>All rights Advancetech International 2020</span>
+                            </div>
+                            <div className="bottom__footerRight">
+                                <span>Made with </span>
+                                <span><FavoriteIcon fontSize="small" color="secondary" /></span>
+                                <span> by Elementor</span>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

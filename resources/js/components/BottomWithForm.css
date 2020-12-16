@@ -72,3 +72,21 @@
     margin-top: 100px;
     border: 1px dotted rgb(184, 175, 175);
 }
+
+.bottom__footer {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    color: gray;
+    font-size: 12px;
+}
+
+.bottom__footerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.bottom__footerRight {
+    display: flex;
+    align-items: center;
+}

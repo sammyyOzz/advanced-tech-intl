@@ -1,0 +1,52 @@
+.contactUsForm {
+    height: 432px;
+    width: 100%;
+    margin-top: 16px;
+    /* padding: 1rem; */
+    background-color: rgba(95, 109, 91, 0.781);
+    z-index: 1;
+}
+
+.contactUsForm__content{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.contactUsForm > h3 {
+    background-color: rgb(95, 185, 87);
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contactUsForm__content > form > input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 0px;
+}
+
+.contactUsForm__content > form > textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 0px;
+}
+
+.contactUsForm__content > form > button {
+    display: block;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 0px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    background-color: #fdd835;
+}
+
+.contact__mapForm {
+    padding-top: 50px;
+}

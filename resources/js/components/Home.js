@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css'
 import HomeTopCard from './HomeTopCard'
 import Grid from '@material-ui/core/Grid';
-import { Button } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 import HomeImageCard from './HomeImageCard';
 import BottomWithForm from './BottomWithForm';
 import ReactWhatsapp from 'react-whatsapp';
@@ -14,7 +14,7 @@ function Home() {
                 <div className="home__overlay">
                     <div className="home__topContent">
 
-                    <ReactWhatsapp number="1-212-736-5000" message="Hello World!!!" />
+                    {/* <ReactWhatsapp number="1-212-736-5000" message="Hello World!!!" /> */}
 
                         <div className="home__cards">
                             <Grid container spacing={5}>
@@ -49,15 +49,23 @@ function Home() {
                     <Grid item md={3} />
                     <Grid item xs={12} md={6}>
                         <div className="home__aboutUsContent">
-                            <div className="homeTopCardMobile">
-                                <HomeTopCard
-                                    caption="EDUCATE"
-                                    text="We have wide range of education research products"
-                                />
-                                <HomeTopCard
-                                    caption="INNOVATIVE"
-                                    text="we are representing worlds' leading research products"
-                                />
+                            <div className="home__mobileContainer">
+                                <div className="homeTopCardMobile">
+                                    <Grid container direction="column" spacing={2}>
+                                        <Grid item xs={12}>
+                                            <HomeTopCard
+                                                caption="EDUCATE"
+                                                text="We have wide range of education research products"
+                                            />
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            <HomeTopCard
+                                                caption="INNOVATIVE"
+                                                text="we are representing worlds' leading research products"
+                                            />
+                                        </Grid>
+                                    </Grid>
+                                </div>
                             </div>
                             <h3>About Us</h3>
                             <h2>25 Long Years Of Service Excellence With Quality At It's Best!</h2>

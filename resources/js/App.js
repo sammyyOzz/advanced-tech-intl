@@ -32,6 +32,8 @@ import RuggedDisplays from './components/datasheetPages/RuggedDisplays';
 import MotionSimulation from './components/datasheetPages/MotionSimulation';
 import SingleBoard from './components/datasheetPages/SingleBoard';
 import ChassisComp from './components/datasheetPages/ChassisComp';
+import ContactUs from './components/ContactUs';
+import "leaflet/dist/leaflet.css"
 
 
 function App() {
@@ -40,6 +42,9 @@ function App() {
             <Router>
                 <Header />
                 <Switch>
+                    <Route exact path="/contact">
+                        <ContactUs />
+                    </Route>
                     <Route exact path="/products/defense-aerospace">
                         <DefenceAerospace />
                     </Route>

@@ -5,18 +5,17 @@ import ProductCard from './ProductCard.js'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import BottomWithForm from './BottomWithForm'
 import { Link } from 'react-router-dom';
+import CarouselComp from './CarouselComp.js'
 
 
 function Products() {
     return (
         <div className="products">
+
             <div className="products__carousel">
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
+                <CarouselComp />
             </div>
+
             <div className="products__section">
                 <Grid container>
                     <Grid item xs={12} md={4}>

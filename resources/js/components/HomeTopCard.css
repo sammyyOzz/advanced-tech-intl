@@ -46,7 +46,7 @@
     box-shadow: 3px 8px 12px rgb(43, 42, 42);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
     .card__mobileHide {
         display: none;
     }

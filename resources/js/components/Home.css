@@ -7,25 +7,14 @@
     width: 100%;
     background: url('../images/adtechFactory.jpg') no-repeat 50% 50%;
     background-size: cover;
-    /* margin: auto; */
-    /* background-attachment: fixed; */
-
 }
 
 .home__overlay {
     height: 800px;
     width: 100%;
-    /* top: 0;
-    left: 0; */
-    /* background-color: #011627;
-    opacity: 0.5; */
     background-color: rgba(45, 50, 95, 0.6);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* margin-top: 81px; */
-    /* position: absolute; */
-    /* top: 0; left: 0; right: 0; bottom: 0; */
     z-index: -1;
 }
 
@@ -191,17 +180,24 @@
 
 
 
-.homeTopCardMobile {
+.home__mobileContainer {
     display: none;
     width: 100%;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 960px) {
+    .home__mobileContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .homeTopCardMobile {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 130px;
+        width: 90%;
     }
 
     .home__cards {
