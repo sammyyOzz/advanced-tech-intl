@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.industrial__carousel {
+    width: 100%;
+}
+
 .industrial__content {
     width: 80%;
 }

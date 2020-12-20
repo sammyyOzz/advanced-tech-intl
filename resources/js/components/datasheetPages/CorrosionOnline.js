@@ -3,16 +3,14 @@ import './Datasheet.css'
 import DataCard from './DataCard'
 import Grid from '@material-ui/core/Grid'
 import RemoveIcon from '@material-ui/icons/Remove';
+import ProductBackImage from '../ProductBackImage';
+import Footer from '../Footer';
 
 function CorrosionOnline() {
     return (
         <div className="datasheet">
             <div className="datasheet__carousel">
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
+                <ProductBackImage title="CORROSION ONLINE" />
             </div>
 
             <div className="datasheet__content">
@@ -48,6 +46,10 @@ function CorrosionOnline() {
                     <hr/>
 
                 </div>
+            </div>
+
+            <div className="datasheet__footer">
+                <Footer />
             </div>
 
         </div>

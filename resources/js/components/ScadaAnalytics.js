@@ -3,17 +3,20 @@ import './ScadaAnalytics.css'
 import BottomWithForm from './BottomWithForm'
 import Grid from '@material-ui/core/Grid'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import CarouselComp from './CarouselComp';
+import ProductPageDesc from './ProductPageDesc';
 
 function ScadaAnalytics() {
     return (
         <div className="industrial">
             <div className="industrial__carousel">
-                <h1>carousel</h1>
-                <h1>carousel</h1>
-                <h1>carousel</h1>
-                <h1>carousel</h1>
-                <h1>carousel</h1>
+                <CarouselComp />
             </div>
+
+            <ProductPageDesc
+                header="SCADA & ANALYTICS PRODUCTS"
+                text="ADVANCETECH provide information monitoring and management systems such as SCADA and Industrial EMS for complete, smart manufacturing solutions."
+            />
 
             <div className="industrial__content">
                 <Grid container spacing={2}>

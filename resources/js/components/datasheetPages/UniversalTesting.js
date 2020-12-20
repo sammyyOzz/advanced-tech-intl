@@ -3,17 +3,15 @@ import DataCard from './DataCard'
 import './Datasheet.css'
 import Grid from '@material-ui/core/Grid'
 import RemoveIcon from '@material-ui/icons/Remove';
+import ProductBackImage from '../ProductBackImage';
+import Footer from '../Footer.js'
 
 
 function UniversalTesting() {
     return (
         <div className="datasheet">
             <div className="datasheet__carousel">
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
-                <h1>Carousel</h1>
+                <ProductBackImage title="UNIVERSAL TESTING SOLUTIONS" />
             </div>
 
             <div className="datasheet__content">
@@ -309,6 +307,10 @@ function UniversalTesting() {
                 </div>
 
 
+            </div>
+
+            <div className="datasheet__footer">
+                <Footer />
             </div>
 
         </div>

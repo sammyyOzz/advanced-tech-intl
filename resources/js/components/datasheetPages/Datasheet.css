@@ -6,7 +6,6 @@
 }
 
 .datasheet__carousel {
-    background-color: skyblue;
     width: 100%;
 }
 
@@ -34,6 +33,10 @@
     color: rgba(180, 179, 179, 0.274);
     margin-top: 45px;
     margin-bottom: 100px;
+}
+
+.datasheet__footer {
+    width: 100%;
 }
 
 

@@ -6,8 +6,11 @@ import Button from '@material-ui/core/Button';
 import HomeImageCard from './HomeImageCard';
 import BottomWithForm from './BottomWithForm';
 import ReactWhatsapp from 'react-whatsapp';
+import { useHistory } from 'react-router-dom';
 
 function Home() {
+    const history = useHistory()
+
     return (
         <div className="home">
             <div className="home__top">
@@ -15,6 +18,9 @@ function Home() {
                     <div className="home__topContent">
 
                     {/* <ReactWhatsapp number="1-212-736-5000" message="Hello World!!!" /> */}
+                        {/* <div className="home__topButton">
+                            <h4>We are providing the most reliable and trendy solution you are looking for</h4>
+                        </div> */}
 
                         <div className="home__cards">
                             <Grid container spacing={5}>
@@ -88,17 +94,33 @@ function Home() {
 
                                     <hr/>
 
-                                    <h3 className="leftHoverBorder">Industrial Automation</h3>
+                                    <h3 onClick={() => {history.push('/products/industrial-automation')}}
+                                    className="leftHoverBorder">Industrial Automation</h3>
                                     <div className="leftLinksBox">
-                                        <span id="firstSpanLink">Material Testing</span>
-                                        <span>Fork Testing</span>
-                                        <span>Torque Testing</span>
-                                        <span>Primary Flow Calibrator</span>
-                                        <span>Networking & Enterprise Solution</span>
-                                        <span>Sensing and Measuting Instruments</span>
-                                        <span>Indicator & Controller</span>
-                                        <span>Date Acquisition and Control System</span>
-                                        <span id="lastSpanLink">Environmental Monitoring</span>
+                                        <span onClick={() => {history.push('/products/industrial-automation/universal-testing-solutions')}}
+                                            id="firstSpanLink">
+                                            Material Testing
+                                        </span>
+                                        <span onClick={() => {history.push('/products/industrial-automation/universal-testing-solutions')}}>
+                                            Fork Testing
+                                        </span>
+                                        <span onClick={() => {history.push('/products/industrial-automation/universal-testing-solutions')}}>
+                                            Torque Testing
+                                        </span>
+                                        <span onClick={() => {history.push('/products/industrial-automation/primary-flow-calibrator')}}>
+                                            Primary Flow Calibrator</span>
+                                        <span onClick={() => {history.push('/products/industrial-automation/networking-enterprise-solution')}}>
+                                            Networking & Enterprise Solution</span>
+                                        <span onClick={() => {history.push('/products/industrial-automation/sensing-and-measuring-instruments')}}>
+                                            Sensing and Measuting Instruments</span>
+                                        <span onClick={() => {history.push('/products/industrial-automation/indicator-controller')}}>
+                                            Indicator & Controller</span>
+                                        <span onClick={() => {history.push('/products/industrial-automation/data-acquisition-and-control-system')}}>
+                                            Date Acquisition and Control System</span>
+                                        <span onClick={() => {history.push('/products/industrial-automation/environmental-monitoring')}}
+                                         id="lastSpanLink">
+                                            Environmental Monitoring
+                                        </span>
                                     </div>
 
                                     <hr/>
@@ -115,27 +137,63 @@ function Home() {
 
                                     <hr/>
 
-                                    <h3 className="leftHoverBorder">Education & Research</h3>
+                                    <h3 onClick={() => {history.push('/products/education-research')}}
+                                        className="leftHoverBorder">
+                                            Education & Research
+                                    </h3>
                                     <div className="leftLinksBox">
-                                        <span id="firstSpanLink">Aeronautical Engineering</span>
-                                        <span>Civil Engineering</span>
-                                        <span>Mechanical Engineering</span>
-                                        <span>Steam & Renewable Energy</span>
-                                        <span>Material Testing & Research</span>
-                                        <span id="lastSpanLink">Corrosion Online</span>
+                                        <span onClick={() => {history.push('/products/education-research/aeronautical-engineering')}}
+                                            id="firstSpanLink">
+                                            Aeronautical Engineering
+                                        </span>
+                                        <span onClick={() => {history.push('/products/education-research/civil-engineering')}}>
+                                            Civil Engineering
+                                        </span>
+                                        <span onClick={() => {history.push('/products/education-research/mechanical-engineering')}}>
+                                            Mechanical Engineering
+                                        </span>
+                                        <span onClick={() => {history.push('/products/education-research/steam-renewable-energy')}}>
+                                            Steam & Renewable Energy
+                                        </span>
+                                        <span onClick={() => {history.push('/products/education-research/material-testing-research')}}>
+                                            Material Testing & Research
+                                        </span>
+                                        <span onClick={() => {history.push('/products/education-research/corrosion-online')}}
+                                            id="lastSpanLink">
+                                                Corrosion Online
+                                        </span>
                                     </div>
 
                                     <hr/>
 
-                                    <h3 className="leftHoverBorder">Defense & Aerospace</h3>
+                                    <h3 onClick={() => {history.push('/products/defense-aerospace')}}
+                                        className="leftHoverBorder">
+                                            Defense & Aerospace
+                                    </h3>
                                     <div className="leftLinksBox">
-                                        <span id="firstSpanLink">Test & Measurement</span>
-                                        <span>Data Center Management</span>
-                                        <span>COSA Embedded Systems</span>
-                                        <span>Rugged Displays & Panel PC</span>
-                                        <span>Motion Simulation Systems</span>
-                                        <span>Single Board Computers</span>
-                                        <span id="lastSpanLink">Chassis, Components & Power Supplies</span>
+                                        <span onClick={() => {history.push('/products/defense-aerospace/test-measurement')}}
+                                            id="firstSpanLink">
+                                                Test & Measurement
+                                        </span>
+                                        <span onClick={() => {history.push('/products/defense-aerospace/data-center-management')}}>
+                                            Data Center Management
+                                        </span>
+                                        <span onClick={() => {history.push('/products/defense-aerospace/cosa-embedded-systems')}}>
+                                            COSA Embedded Systems
+                                        </span>
+                                        <span onClick={() => {history.push('/products/defense-aerospace/rugged-displays-panel-pc')}}>
+                                            Rugged Displays & Panel PC
+                                        </span>
+                                        <span onClick={() => {history.push('/products/defense-aerospace/motion-simulation-systems')}}>
+                                            Motion Simulation Systems
+                                        </span>
+                                        <span onClick={() => {history.push('/products/defense-aerospace/single-board-computers')}}>
+                                            Single Board Computers
+                                        </span>
+                                        <span onClick={() => {history.push('/products/defense-aerospace/chassis-components-power-supplies')}}
+                                            id="lastSpanLink">
+                                                Chassis, Components & Power Supplies
+                                        </span>
                                     </div>
 
                                     <hr/>

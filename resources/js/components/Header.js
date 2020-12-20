@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
+import NavDrawer from './NavDrawer'
 
 
 function Header() {
@@ -43,7 +44,16 @@ function Header() {
                 </Link>
             </div>
 
-            <button>Request for quote</button>
+            <div className="header__right">
+                <div className="header__rightBtn">
+                    <button>Request for quote</button>
+                </div>
+
+                <div className="header__mobileMenuIcon">
+                    <NavDrawer />
+                </div>
+
+            </div>
 
         </div>
     )

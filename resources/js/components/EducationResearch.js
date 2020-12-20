@@ -4,17 +4,20 @@ import Grid from '@material-ui/core/Grid'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import BottomWithForm from './BottomWithForm'
 import { Link } from 'react-router-dom';
+import CarouselComp from './CarouselComp';
+import ProductPageDesc from './ProductPageDesc';
 
 function EducationResearch() {
     return (
         <div className="industrial">
             <div className="industrial__carousel">
-                <h1>carousel</h1>
-                <h1>carousel</h1>
-                <h1>carousel</h1>
-                <h1>carousel</h1>
-                <h1>carousel</h1>
+                <CarouselComp />
             </div>
+
+            <ProductPageDesc
+                header="EDUCATION & RESEARCH PRODUCTS"
+                text="ADVANCETECH  provides quality products and services while rapidly responding to international needs for innovative and accurate educational and research equipment."
+            />
 
             <div className="industrial__content">
                 <Grid container spacing={2}>

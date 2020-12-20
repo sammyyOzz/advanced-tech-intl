@@ -1,0 +1,27 @@
+.productDesc {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 90px;
+    border: 5px solid rgb(204, 197, 197);
+}
+
+.productDesc__content {
+    width: 80%
+}
+
+.productDesc__content > h2 {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    color: white;
+}
+
+.productDesc__content > p {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 25px;
+}

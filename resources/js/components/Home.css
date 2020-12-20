@@ -24,6 +24,11 @@
     display: flex;
 }
 
+.home__topButton {
+    display: flex;
+    align-self: center;
+}
+
 .home__cards {
     display: flex;
     align-self: flex-end;
@@ -112,6 +117,7 @@
     /* box-shadow: 2px 5px 8px rgb(212, 209, 209); */
     -webkit-box-shadow: 0 0 10px #fff;
     box-shadow: 0 0 10px #fff;
+    cursor: pointer;
 }
 
 .leftLinksBox > span {
@@ -123,6 +129,7 @@
 
 .leftLinksBox > span:hover {
     color: yellow;
+    cursor: pointer;
 }
 
 #firstSpanLink {

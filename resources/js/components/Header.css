@@ -34,7 +34,7 @@
     transition: all 200ms linear;
 }
 
-.header > button {
+.header__rightBtn > button {
     text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
     background-color: rgba(2, 1, 1, 0);
     border-style: solid;
@@ -45,6 +45,31 @@
     color: white;
 }
 
-.header > button:hover {
+.header__rightBtn > button:hover {
     background-color: #C9D500;
+}
+
+.header__mobileMenuIcon {
+    display: none;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+
+@media(max-width: 960px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__mobileMenuIcon {
+        display: flex;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
 }

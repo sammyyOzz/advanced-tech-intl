@@ -4,6 +4,8 @@ import Grid from '@material-ui/core/Grid'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import BottomWithForm from './BottomWithForm'
 import { Link, useHistory } from 'react-router-dom';
+import ProductPageDesc from './ProductPageDesc';
+import CarouselComp from './CarouselComp';
 
 
 function IndustrialAutomation() {
@@ -12,12 +14,12 @@ function IndustrialAutomation() {
     return (
         <div className="industrial">
             <div className="industrial__carousel">
-                <h1>carousel</h1>
-                <h1>carousel</h1>
-                <h1>carousel</h1>
-                <h1>carousel</h1>
-                <h1>carousel</h1>
+                <CarouselComp />
             </div>
+            <ProductPageDesc
+                header="INDUSTRIAL AUTOMATION PRODUCTS"
+                text="ADVANCETECH offers a wide variety of automation products that support a full spectrum of industrial applications. From factory automation to process control, our products address a wide range of industrial requirements. For more information about our industrial automation products, please select a category below:"
+            />
 
             <div className="industrial__content">
                 <Grid container spacing={2}>

@@ -1,0 +1,24 @@
+.productBackImage {
+    height: 450px;
+    width: 100%;
+    background: url('../images/carousel/book-4126483_1920-1.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    color: white;
+}
+
+.productBackImage__II {
+    height: 450px;
+    width: 100%;
+    background: url('../images/carousel/military-jet-flight-flying-1245256.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    color: white;
+}
+
+.productBackImage__overlay {
+    height: 450px;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.534);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
