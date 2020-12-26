@@ -5,7 +5,6 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import HomeImageCard from './HomeImageCard';
 import BottomWithForm from './BottomWithForm';
-import ReactWhatsapp from 'react-whatsapp';
 import { useHistory } from 'react-router-dom';
 
 function Home() {
@@ -17,7 +16,6 @@ function Home() {
                 <div className="home__overlay">
                     <div className="home__topContent">
 
-                    {/* <ReactWhatsapp number="1-212-736-5000" message="Hello World!!!" /> */}
                         <div className="home__topInfo">
                             <h4>We are providing the most reliable and trendy solution you are looking for</h4>
                             <div className="home__topInfoBtn">
@@ -133,14 +131,21 @@ function Home() {
 
                                     <hr/>
 
-                                    <h3 className="leftHoverBorder">SCADA & Analytics</h3>
+                                    <h3 onClick={() => {history.push('/products/scada-analytics')}}
+                                    className="leftHoverBorder">SCADA & Analytics</h3>
                                     <div className="leftLinksBox">
-                                        <span id="firstSpanLink">Enterprise Solution</span>
-                                        <span>Data Historian</span>
-                                        <span>IoT Solutions</span>
-                                        <span>Mobility Solution</span>
-                                        <span>Visualization</span>
-                                        <span id="lastSpanLink">Analytics</span>
+                                        <span onClick={() => {history.push('/products/scada-analytics/enterprise-solution')}}
+                                            id="firstSpanLink">Enterprise Solution</span>
+                                        <span onClick={() => {history.push('/products/scada-analytics/data-historian')}}>
+                                            Data Historian</span>
+                                        <span onClick={() => {history.push('/products/scada-analytics/iot-solutions')}}>
+                                            IoT Solutions</span>
+                                        <span onClick={() => {history.push('/products/scada-analytics/mobility-solution')}}>
+                                            Mobility Solution</span>
+                                        <span onClick={() => {history.push('/products/scada-analytics/visualization')}}>
+                                            Visualization</span>
+                                        <span onClick={() => {history.push('/products/scada-analytics/analytics')}}
+                                        id="lastSpanLink">Analytics</span>
                                     </div>
 
                                     <hr/>

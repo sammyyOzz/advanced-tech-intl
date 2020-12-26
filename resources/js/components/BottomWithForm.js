@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './BottomWithForm.css'
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid'
 import CopyrightIcon from '@material-ui/icons/Copyright';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 function BottomWithForm() {
+    const [contact, setContact] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    })
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        axios.post('http://127.0.0.1:8000/api/contact', contact)
+        setContact({ ...contact, name: '', email: '', phone: '', message: '' })
+    }
+
     return (
         <div className="bottom">
                 <div className="bottomOverlay">
@@ -61,12 +75,24 @@ function BottomWithForm() {
 
                             <Grid item xs={12} md={5}>
                                 <div className="bottomForm">
-                                    <form>
-                                        <input type="text" placeholder="Name" />
-                                        <input type="email" placeholder="Email" />
-                                        <input type="text" placeholder="Phone Number" />
-                                        <textarea placeholder="Message" ></textarea>
-                                        <Button variant="contained" style={{ backgroundColor: '#fdd835', color: 'white'}}><h4>Submit</h4></Button>
+                                    <form onSubmit={handleSubmit}>
+                                        <input type="text" placeholder="Name"
+                                            value={contact.name}
+                                            onChange={ e => setContact({...contact, name: e.target.value})}
+                                        />
+                                        <input type="email" placeholder="Email"
+                                            value={contact.email}
+                                            onChange={ e => setContact({...contact, email: e.target.value})}
+                                        />
+                                        <input type="text" placeholder="Phone Number"
+                                            value={contact.phone}
+                                            onChange={ e => setContact({...contact, phone: e.target.value})}
+                                        />
+                                        <textarea placeholder="Message" value={contact.message}
+                                            onChange={ e => setContact({...contact, message: e.target.value})}>
+                                        </textarea>
+
+                                        <Button type="submit" variant="contained" style={{ backgroundColor: '#fdd835', color: 'white'}}><h4>Submit</h4></Button>
                                     </form>
                                 </div>
                             </Grid>

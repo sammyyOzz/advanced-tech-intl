@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import CarouselComp from './CarouselComp';
 import ProductPageDesc from './ProductPageDesc';
+import { Link } from 'react-router-dom';
 
 function ScadaAnalytics() {
     return (
@@ -39,7 +40,12 @@ function ScadaAnalytics() {
                     <Grid item xs={12} md={8}>
                         <div className="industrial__rightSect">
                             <div className="industrial__productGroup">
-                                <h4>Enterprise Solution</h4>
+                                <h4>
+                                    <Link to="/products/scada-analytics/enterprise-solution"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Enterprise Solution
+                                    </Link>
+                                    </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>ICONICS CFSWorX™</span>
                                     <span style={{ borderRight: 'none'}}>The BridgeWorX™64</span>
@@ -67,7 +73,12 @@ function ScadaAnalytics() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Data Historian</h4>
+                                <h4>
+                                    <Link to="/products/scada-analytics/data-historian"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Data Historian
+                                    </Link>
+                                    </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span style={{ borderRight: 'none'}}>ICONICS’ Hyper Historian™</span>
                                 </div>
@@ -94,7 +105,12 @@ function ScadaAnalytics() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>IoT Solution</h4>
+                                <h4>
+                                <Link to="/products/scada-analytics/iot-solutions"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        IoT Solution
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span style={{ borderRight: 'none'}}>IoTWorX™</span>
                                 </div>
@@ -110,7 +126,12 @@ function ScadaAnalytics() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Mobility Solution</h4>
+                                <h4>
+                                    <Link to="/products/scada-analytics/mobility-solution"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Mobility Solution
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>MobileHMI</span>
                                     <span style={{ borderRight: 'none'}}>KPIWorX™</span>
@@ -139,7 +160,12 @@ function ScadaAnalytics() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Visualization</h4>
+                                <h4>
+                                <Link to="/products/scada-analytics/visualization"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Visualization
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>GENESIS64™</span>
                                     <span style={{ borderRight: 'none'}}>GENESIS32™</span>
@@ -167,7 +193,12 @@ function ScadaAnalytics() {
                             </div>
 
                             <div className="industrial__productGroup">
-                                <h4>Analytics</h4>
+                                <h4>
+                                    <Link to="/products/scada-analytics/analytics"
+                                    style={{ textDecoration: 'none', color: 'red'}}>
+                                        Analytics
+                                    </Link>
+                                </h4>
                                 <div className="industrial__productGroupTitles">
                                     <span>Energy AnalytiX®</span>
                                     <span>Facility AnalytiX®</span>

@@ -40,6 +40,8 @@ import IotSolutions from './components/datasheetPages/IotSolutions';
 import MobilitySolution from './components/datasheetPages/MobilitySolution';
 import Visualization from './components/datasheetPages/Visualization';
 import Analytics from './components/datasheetPages/Analytics';
+import FloatingButton from './components/FloatingButton';
+
 
 
 function App() {
@@ -149,13 +151,13 @@ function App() {
                     </Route>
                 </Switch>
 
+                <FloatingButton />
             </Router>
         </div>
 
 
     )
 }
-
 
 if (document.getElementById('root')) {
     ReactDOM.render(<App />, document.getElementById('root'));
