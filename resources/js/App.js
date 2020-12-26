@@ -34,6 +34,12 @@ import SingleBoard from './components/datasheetPages/SingleBoard';
 import ChassisComp from './components/datasheetPages/ChassisComp';
 import ContactUs from './components/ContactUs';
 import "leaflet/dist/leaflet.css"
+import EnterpriseSolution from './components/datasheetPages/EnterpriseSolution';
+import DataHistorian from './components/datasheetPages/DataHistorian';
+import IotSolutions from './components/datasheetPages/IotSolutions';
+import MobilitySolution from './components/datasheetPages/MobilitySolution';
+import Visualization from './components/datasheetPages/Visualization';
+import Analytics from './components/datasheetPages/Analytics';
 
 
 function App() {
@@ -116,6 +122,24 @@ function App() {
                     </Route>
                     <Route exact path="/products/scada-analytics">
                         <ScadaAnalytics />
+                    </Route>
+                    <Route exact path="/products/scada-analytics/enterprise-solution">
+                        <EnterpriseSolution />
+                    </Route>
+                    <Route exact path="/products/scada-analytics/data-historian">
+                        <DataHistorian />
+                    </Route>
+                    <Route exact path="/products/scada-analytics/iot-solutions">
+                        <IotSolutions />
+                    </Route>
+                    <Route exact path="/products/scada-analytics/mobility-solution">
+                        <MobilitySolution />
+                    </Route>
+                    <Route exact path="/products/scada-analytics/visualization">
+                        <Visualization />
+                    </Route>
+                    <Route exact path="/products/scada-analytics/analytics">
+                        <Analytics />
                     </Route>
                     <Route exact path="/products">
                         <Products />

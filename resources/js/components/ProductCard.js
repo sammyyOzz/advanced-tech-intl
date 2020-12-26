@@ -1,7 +1,10 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import './ProductCard.css'
 
-function ProductCard({ name, description, image }) {
+function ProductCard({ name, description, image, link }) {
+    const history = useHistory()
+
     return (
         <div className="productCard">
             <div className="productCard__top">
@@ -15,7 +18,9 @@ function ProductCard({ name, description, image }) {
             </div>
 
             <div className="productCard__btn">
-                <button>Learn More</button>
+                <button onClick={ () => {history.push(`/products/${link}`)}} >
+                    Learn More
+                </button>
             </div>
         </div>
     )

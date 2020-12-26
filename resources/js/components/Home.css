@@ -19,14 +19,30 @@
 }
 
 .home__topContent {
-    height: 100%;
-    width: 80%;
+    height: 50%;
+    width: 90%;
     display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.home__topButton {
+.home__topInfo {
     display: flex;
     align-self: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home__topInfoBtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.home__topInfo > h4 {
+    color: white;
+    margin-bottom: 30px;
 }
 
 .home__cards {

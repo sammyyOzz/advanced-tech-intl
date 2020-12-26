@@ -41,6 +41,12 @@
     height: auto;
     width: 100%;
     object-fit: contain;
+    transition: all 200ms linear;
+}
+
+.productCard__image > img:hover {
+    transform: scale(0.85);
+    transition: all 200ms linear;
 }
 
 .productCard__btn {
@@ -55,12 +61,12 @@
     color: red;
     border: 1px solid red;
     margin-top: 25px;
-
 }
 
 .productCard__btn > button:hover {
     color: green;
     border-color: green;
+    cursor: pointer;
 }
 
 @media(max-width: 1350px) {

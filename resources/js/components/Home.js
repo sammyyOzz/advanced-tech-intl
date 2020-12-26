@@ -18,9 +18,17 @@ function Home() {
                     <div className="home__topContent">
 
                     {/* <ReactWhatsapp number="1-212-736-5000" message="Hello World!!!" /> */}
-                        {/* <div className="home__topButton">
+                        <div className="home__topInfo">
                             <h4>We are providing the most reliable and trendy solution you are looking for</h4>
-                        </div> */}
+                            <div className="home__topInfoBtn">
+                                <Button
+                                    onClick={() => {history.push('/products')}}
+                                    variant="contained"
+                                    style={{ backgroundColor: '#fdd835', color: 'white'}}>
+                                        <h4>Learn More</h4>
+                                    </Button>
+                            </div>
+                        </div>
 
                         <div className="home__cards">
                             <Grid container spacing={5}>
@@ -206,7 +214,12 @@ function Home() {
                                 <div className="home__productsRight">
                                     <div className="home__productsRightContent">
                                         <h2 style={{ marginBottom: '40px'}}>The only place where you’ll get the perfect solution for all your industry needs.</h2>
-                                        <Button variant="contained" style={{ backgroundColor: '#fdd835', color: 'white'}}><h4>Learn More</h4></Button>
+                                        <Button
+                                            onClick={() => {history.push('/products')}}
+                                            variant="contained"
+                                            style={{ backgroundColor: '#fdd835', color: 'white'}}>
+                                                <h4>Learn More</h4>
+                                        </Button>
                                     </div>
                                 </div>
                             </Grid>
@@ -227,36 +240,42 @@ function Home() {
                                 <HomeImageCard
                                     image="aerospace.jpg"
                                     tag="Defence And Aerospace"
+                                    link="defense-aerospace"
                                 />
                             </Grid>
                             <Grid item xs={12} md={4}>
                                 <HomeImageCard
                                     image="oil.jpg"
                                     tag="Oil And Gas Industry"
+                                    link="industrial-automation"
                                 />
                             </Grid>
                             <Grid item xs={12} md={4}>
                                 <HomeImageCard
                                     image="automotive1.jpg"
                                     tag="Automotive Industry"
+                                    link="industrial-automation"
                                 />
                             </Grid>
                             <Grid item xs={12} md={4}>
                                 <HomeImageCard
                                     image="education-research.jpg"
                                     tag="Education And Research"
+                                    link="education-research"
                                 />
                             </Grid>
                             <Grid item xs={12} md={4}>
                                 <HomeImageCard
                                     image="iautomation.jpg"
                                     tag="SCADA & Analytics"
+                                    link="scada-analytics"
                                 />
                             </Grid>
                             <Grid item xs={12} md={4}>
                                 <HomeImageCard
                                     image="industry-web.jpg"
                                     tag="IoT and Industry 4.0 Solutions"
+                                    link="scada-analytics"
                                 />
                             </Grid>
                         </Grid>

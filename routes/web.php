@@ -22,3 +22,4 @@ Route::view('/products/{path?}', 'app');
 Route::view('/products/industrial-automation/{path?}', 'app');
 Route::view('/products/education-research/{path?}', 'app');
 Route::view('/products/defense-aerospace/{path?}', 'app');
+Route::view('/products/scada-analytics/{path?}', 'app');

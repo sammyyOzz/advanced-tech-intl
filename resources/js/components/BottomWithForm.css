@@ -27,13 +27,13 @@
     margin-bottom: 30px;
 }
 
-.bottomGrid > p {
+.bottomGridLink {
     color: rgb(184, 175, 175);
     margin-bottom: 20px;
     font-size: small;
 }
 
-.bottomGrid > p:hover {
+.bottomGridLink:hover {
     color: yellow;
 }
 

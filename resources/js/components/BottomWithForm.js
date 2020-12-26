@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid'
 import CopyrightIcon from '@material-ui/icons/Copyright';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import { Link } from 'react-router-dom';
 
 function BottomWithForm() {
     return (
@@ -15,30 +16,45 @@ function BottomWithForm() {
                                 <Grid item xs={6} md={4}>
                                     <div className="bottomGrid">
                                         <h4>Products</h4>
-                                        <p>Industrial Automation</p>
-                                        <p>SCADA & Analytics</p>
-                                        <p>Education & Research</p>
-                                        <p>Defese & Aerospace</p>
+                                        <Link to='/products/industrial-automation'
+                                         style={{ textDecoration: 'none' }}>
+                                            <p className="bottomGridLink">Industrial Automation</p>
+                                        </Link>
+                                        <Link to='/products/scada-analytics'
+                                         style={{ textDecoration: 'none' }}>
+                                            <p className="bottomGridLink">SCADA & Analytics</p>
+                                        </Link>
+                                        <Link to='/products/education-research'
+                                         style={{ textDecoration: 'none' }}>
+                                            <p className="bottomGridLink">Education & Research</p>
+                                        </Link>
+                                        <Link to='/products/defense-aerospace'
+                                         style={{ textDecoration: 'none' }}>
+                                            <p className="bottomGridLink">Defese & Aerospace</p>
+                                        </Link>
                                     </div>
                                 </Grid>
                                 <Grid item xs={6} md={4}>
                                     <div className="bottomGrid">
                                         <h4>Services</h4>
-                                        <p>Installation Services</p>
-                                        <p>Repair & Calibration</p>
-                                        <p>Turnkey Solution</p>
-                                        <p>Project Maping</p>
+                                        <p className="bottomGridLink">Installation Services</p>
+                                        <p className="bottomGridLink">Repair & Calibration</p>
+                                        <p className="bottomGridLink">Turnkey Solution</p>
+                                        <p className="bottomGridLink">Project Maping</p>
                                     </div>
                                 </Grid>
                                 <Grid item xs={6} md={4}>
                                     <div className="bottomGrid">
                                         <h4>About</h4>
-                                        <p>Contact Us</p>
-                                        <p>About Us</p>
-                                        <p>Projects</p>
-                                        <p>Blogs & Videos</p>
-                                        <p>News Letters</p>
-                                        <p>Careers</p>
+                                        <Link to='/contact'
+                                         style={{ textDecoration: 'none' }}>
+                                            <p className="bottomGridLink">Contact Us</p>
+                                        </Link>
+                                        <p className="bottomGridLink">About Us</p>
+                                        <p className="bottomGridLink">Projects</p>
+                                        <p className="bottomGridLink">Blogs & Videos</p>
+                                        <p className="bottomGridLink">News Letters</p>
+                                        <p className="bottomGridLink">Careers</p>
                                     </div>
                                 </Grid>
                             </Grid>

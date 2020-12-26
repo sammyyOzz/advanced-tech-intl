@@ -7,9 +7,11 @@ import NavDrawer from './NavDrawer'
 function Header() {
     return (
         <div className="header">
-            <div className="header__image">
-                <img src={require('../images/adtechLogo.png')} alt="Logo"/>
-            </div>
+            <Link to="/">
+                <div className="header__image">
+                    <img src={require('../images/adtechLogo.png')} alt="Logo"/>
+                </div>
+            </Link>
 
             <div className="header__nav">
                 <Link to="/" style={{ textDecoration: 'none'}}>
