@@ -13,6 +13,8 @@ function ContactUsForm() {
     const handleSubmit = e => {
         e.preventDefault();
         Axios.post('http://127.0.0.1:8000/api/contact', contact)
+        .then(() => alert('successfully sent'))
+        .catch(() => alert('sorry, there was a problem completing the action'))
         setContact({ ...contact, name: '', email: '', phone: '', message: '' })
     }
 

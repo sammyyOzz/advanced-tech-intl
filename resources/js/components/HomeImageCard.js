@@ -16,7 +16,7 @@ function HomeImageCard({ image, tag, link }) {
             </div>
             <Link to={`/products/${link}`}
             style={{ textDecoration: 'none' }}>
-                <h4 data-aos="fade-left" className="imageCard__tag">{tag}</h4>
+                <h4 data-aos="fade-right" className="imageCard__tag">{tag}</h4>
             </Link>
         </div>
     )
