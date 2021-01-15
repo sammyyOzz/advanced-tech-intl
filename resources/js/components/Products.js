@@ -13,7 +13,14 @@ function Products() {
         <div className="products">
 
             <div className="products__carousel">
-                <CarouselComp />
+                <CarouselComp
+                    animate="fade"
+                    time="4000"
+                    images={[
+                        "book-4126483_1920-1.jpg",
+                        "military-jet-flight-flying-1245256.jpg"
+                    ]}
+                />
             </div>
 
             <div className="products__section">

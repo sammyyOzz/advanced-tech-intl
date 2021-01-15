@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
 import HomeTopCard from './HomeTopCard'
 import Grid from '@material-ui/core/Grid';
@@ -6,9 +6,16 @@ import Button from '@material-ui/core/Button';
 import HomeImageCard from './HomeImageCard';
 import BottomWithForm from './BottomWithForm';
 import { useHistory } from 'react-router-dom';
+import CarouselComp from './CarouselComp';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 function Home() {
     const history = useHistory()
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
 
     return (
         <div className="home">
@@ -56,7 +63,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="home__aboutUs">
+            <div data-aos="fade-right" className="home__aboutUs">
                 <Grid container>
                     <Grid item md={3} />
                     <Grid item xs={12} md={6}>
@@ -285,10 +292,27 @@ function Home() {
                             </Grid>
                         </Grid>
                     </div>
-                    <div className="home__carosel">
-                        <h1>Carosel div</h1>
-                        <h1>Carosel div</h1>
-                        <h1>Carosel div</h1>
+                    <div className="home__carouselContainer">
+                        <div className="home__carousel">
+
+                            <h3>Our Partners</h3>
+
+                            <CarouselComp
+                                animate="slide"
+                                time="2000"
+                                short
+                                showIndicator
+                                images={[
+                                    "astronics-new.png",
+                                    "durridge-logo.png",
+                                    "fuuture-tech-new.jpg",
+                                    "mecmesin-logo-new.jpg",
+                                    "NAI_Logo-new.png",
+                                    "postec.jpg",
+                                    "Red-Lion-Logo.png"
+                                ]}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Header.css'
 import NavDrawer from './NavDrawer'
 
@@ -7,49 +7,37 @@ import NavDrawer from './NavDrawer'
 function Header() {
     return (
         <div className="header">
-            <Link to="/">
+            <NavLink to="/">
                 <div className="header__image">
                     <img src={require('../images/adtechLogo.png')} alt="Logo"/>
                 </div>
-            </Link>
+            </NavLink>
 
             <div className="header__nav">
-                <Link to="/" style={{ textDecoration: 'none'}}>
-                    <div className="header__link">
-                        Home
-                    </div>
-                </Link>
-                <Link to="#" style={{ textDecoration: 'none'}}>
-                    <div className="header__link">
-                        About Us
-                    </div>
-                </Link>
-                <Link to="/products" style={{ textDecoration: 'none'}}>
-                    <div className="header__link">
-                        Products
-                    </div>
-                </Link>
-                <Link to="#" style={{ textDecoration: 'none'}}>
-                    <div className="header__link">
-                        Services
-                    </div>
-                </Link>
-                <Link to="#" style={{ textDecoration: 'none'}}>
-                    <div className="header__link">
-                        Partners
-                    </div>
-                </Link>
-                <Link to="/contact" style={{ textDecoration: 'none'}}>
-                    <div className="header__link">
-                        Contact Us
-                    </div>
-                </Link>
+                <NavLink exact to="/" className="header__link" activeStyle={{ color: 'rgb(10, 233, 10)' }}>
+                    Home
+                </NavLink>
+                {/* <NavLink to="#" className="header__link">
+                    About Us
+                </NavLink> */}
+                <NavLink to="/products" className="header__link" activeStyle={{ color: 'rgb(10, 233, 10)' }}>
+                    Products
+                </NavLink>
+                {/* <NavLink to="#" className="header__link">
+                    Services
+                </NavLink>
+                <NavLink to="#" className="header__link">
+                    Partners
+                </NavLink> */}
+                <NavLink to="/contact" className="header__link" activeStyle={{ color: 'rgb(10, 233, 10)' }}>
+                    Contact Us
+                </NavLink>
             </div>
 
             <div className="header__right">
-                <div className="header__rightBtn">
+                {/* <div className="header__rightBtn">
                     <button>Request for quote</button>
-                </div>
+                </div> */}
 
                 <div className="header__mobileMenuIcon">
                     <NavDrawer />

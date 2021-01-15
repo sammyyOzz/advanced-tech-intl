@@ -22,6 +22,7 @@ function IndicatorController() {
                                 image="indicator-controller/Process-Indicator-1.jpg"
                                 title="Universal Process Indicator"
                                 text="Process indicator available with various feature and sizes. Digital indicator with single universal input and up to 3 outputs, 5 digit configurable display. Green or red color LED and RS485 communication. DIN Rail or Panel mount type."
+                                file="indicator-controller/Process-Indicator.pdf"
                             />
                         </Grid>
                         <Grid item xs={12} md={4}>
@@ -29,6 +30,7 @@ function IndicatorController() {
                                 image="indicator-controller/Panel-meter.png"
                                 title="Panel Meters"
                                 text="Digital or analog panel meters comes with add or change capabilities with plug and play, field install able cards. Display, count, rate, time, voltage, current process, strain gauge and temperature input type. Front panel IP 65 protection."
+                                file="indicator-controller/Panel-Meter.pdf"
                             />
                         </Grid>
                         <Grid item xs={12} md={4}>

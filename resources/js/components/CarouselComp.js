@@ -2,29 +2,26 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import './CarouselComp.css'
 
-export default function CarouselComp(props)
+export default function CarouselComp({ animate, short, images, time, showIndicator })
 {
-    const items = [
-        "book-4126483_1920-1.jpg",
-        "military-jet-flight-flying-1245256.jpg"
-    ]
-
     return (
-        <Carousel>
+        <Carousel
+            animation={animate}
+            interval={time}
+            indicators={ showIndicator ? true : false }
+        >
             {
-                items.map( (item, i) => <Item key={i} image={item} /> )
+                images.map((image, i) => {
+                    return (
+                        <img
+                            key={i}
+                            className={ !short ? "carousel__img" : "carousel__short"}
+                            src={require(`../images/carousel/${image}`)}
+                            alt=""
+                        />
+                    )
+                })
             }
         </Carousel>
-    )
-}
-
-function Item({ image })
-{
-    return (
-        <img
-            className="carousel__img"
-            src={require(`../images/carousel/${image}`)}
-            alt=""
-        />
     )
 }

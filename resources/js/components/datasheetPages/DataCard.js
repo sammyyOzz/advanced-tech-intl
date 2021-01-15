@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import './DataCard.css'
 
 function DataCard({ image, title, text, textList, longText, li, file }) {
+
+    const pdf = image.substring(0, image.lastIndexOf('.') + 1);
+
     return (
         <div className="dataCard">
             <div className="dataCard__top">
@@ -12,7 +15,7 @@ function DataCard({ image, title, text, textList, longText, li, file }) {
                 <div className="dataCard__description">
                     <h3>{title}</h3>
                     { text && <p>{text}</p> }
-                    { textList && <ul>{textList.map(item => <li>{item}</li>)}</ul> }
+                    { textList && <ul>{textList.map((item, index) => <li key={index}>{item}</li>)}</ul> }
                 </div>
             </div>
 
@@ -21,15 +24,14 @@ function DataCard({ image, title, text, textList, longText, li, file }) {
                 <div className="dataCard__longText">
                     <p>{longText}</p>
                     <ul>
-                        { li.map(item => <li>{item}</li> ) }
+                        { li.map((item, index) => <li key={index}>{item}</li> ) }
                     </ul>
                 </div>
             }
 
             <div className="dataCard__btn">
                 {
-                    file &&
-                    <Link to={`/pdfs/${file}`} target="_blank" download>
+                    <Link to={ file ? `/pdfs/${file}` : `/pdfs/${pdf}pdf` } target="_blank" download>
                         <button className="cardBtn">Datasheet</button>
                     </Link>
                 }

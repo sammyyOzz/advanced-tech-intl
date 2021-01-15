@@ -47,7 +47,7 @@
 
 .home__cards {
     display: flex;
-    align-self: flex-end;
+    align-self: center;
     z-index: 1;
     width: 100%;
     /* padding: 0px 10px 0px 10px; */
@@ -200,7 +200,22 @@
     display: flex;
 }
 
+.home__carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.home__carousel {
+    width: 600px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.home__carousel > h3 {
+    color: rgb(5, 104, 150);
+    margin-bottom: 50px;
+}
 
 
 .home__mobileContainer {
@@ -224,10 +239,18 @@
     }
 
     .home__cards {
+        width: 85%;
+    }
+
+    .home__cards {
         margin-bottom: -80px;
     }
 
     .home__aboutUsContent {
         padding-top: 20px;
+    }
+
+    .home__carousel {
+        width: 100%;
     }
 }

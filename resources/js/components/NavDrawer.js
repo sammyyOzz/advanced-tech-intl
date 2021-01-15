@@ -59,26 +59,26 @@ export default function NavDrawer() {
             <ListItemText>Home</ListItemText>
           </Link>
         </ListItem>
-        <ListItem button>
+        {/* <ListItem button>
           <Link to="#" style={{ textDecoration: 'none', color: 'black' }}>
             <ListItemText>About Us</ListItemText>
           </Link>
-        </ListItem>
+        </ListItem> */}
         <ListItem button>
           <Link to="/products" style={{ textDecoration: 'none', color: 'black' }}>
             <ListItemText>Products</ListItemText>
           </Link>
         </ListItem>
-        <ListItem button>
+        {/* <ListItem button>
           <Link to="#" style={{ textDecoration: 'none', color: 'black' }}>
             <ListItemText>Services</ListItemText>
           </Link>
-        </ListItem>
-        <ListItem button>
+        </ListItem> */}
+        {/* <ListItem button>
           <Link to="#" style={{ textDecoration: 'none', color: 'black' }}>
             <ListItemText>Partners</ListItemText>
           </Link>
-        </ListItem>
+        </ListItem> */}
         <ListItem button>
           <Link to="/contact" style={{ textDecoration: 'none', color: 'black' }}>
             <ListItemText>Contact Us</ListItemText>

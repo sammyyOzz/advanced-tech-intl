@@ -14,7 +14,14 @@ function IndustrialAutomation() {
     return (
         <div className="industrial">
             <div className="industrial__carousel">
-                <CarouselComp />
+                <CarouselComp
+                    animate="fade"
+                    time="4000"
+                    images={[
+                        "book-4126483_1920-1.jpg",
+                        "military-jet-flight-flying-1245256.jpg"
+                    ]}
+                />
             </div>
             <ProductPageDesc
                 header="INDUSTRIAL AUTOMATION PRODUCTS"
@@ -36,7 +43,7 @@ function IndustrialAutomation() {
                                 <p><ArrowForwardIosIcon fontSize="small" id="industrial__arrowIcon" />Primary Flow Calibrator</p>
                                 <p><ArrowForwardIosIcon fontSize="small" id="industrial__arrowIcon" />Sensing and Measuring Instruments</p>
                                 <p><ArrowForwardIosIcon fontSize="small" id="industrial__arrowIcon" />Environmental Monitoring</p>
-                                <p><ArrowForwardIosIcon fontSize="small" id="industrial__arrowIcon" />Multiloop Process Controller</p>
+                                {/* <p><ArrowForwardIosIcon fontSize="small" id="industrial__arrowIcon" />Multiloop Process Controller</p> */}
                             </div>
                         </div>
                     </Grid>
@@ -337,7 +344,7 @@ function IndustrialAutomation() {
                                 </div>
                             </div>
 
-                            <div className="industrial__productGroup">
+                            {/* <div className="industrial__productGroup">
                                 <h4>Multiloop Process Controller</h4>
                                 <div className="industrial__productGroupTitles">
                                     <span style={{ borderRight: 'none'}}>353 RetroPACK</span>
@@ -362,7 +369,7 @@ function IndustrialAutomation() {
                                 <div className="industrial__btn">
                                     <button>Learn More</button>
                                 </div>
-                            </div>
+                            </div> */}
 
                         </div>
                     </Grid>

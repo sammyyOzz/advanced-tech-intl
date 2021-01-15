@@ -27,6 +27,7 @@
     margin-right: 10px;
     transition: all 200ms linear;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .header__link:hover {
@@ -51,14 +52,15 @@
     background-color: #C9D500;
 }
 
-.header__mobileMenuIcon {
+.header__right {
     display: none;
 }
 
-.header__right {
+/*  THE ORIGINAL THING
+    .header__right {
     display: flex;
     align-items: center;
-}
+} */
 
 
 @media(max-width: 960px) {
@@ -66,7 +68,7 @@
         display: none;
     }
 
-    .header__mobileMenuIcon {
+    .header__right {
         display: flex;
     }
 
