@@ -14,6 +14,7 @@
         "@babel/plugin-syntax-class-properties": "^7.12.1",
         "@babel/preset-react": "^7.12.5",
         "axios": "^0.19",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "browser-sync": "^2.26.13",
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^7.0",
